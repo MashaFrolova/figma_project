@@ -1,0 +1,370 @@
+.pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    height: 1155px;
+    background-color: $second-color;
+    margin: 0 auto;
+    &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        width: 552px;
+        height: 182px;
+        margin: 100px 612.5px 80px 612.5px;
+        h2 {
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 55px;
+            text-align: center;
+            letter-spacing: 0.2px;
+            color: #FFFFFF;
+        }
+        h4 {
+            margin-top: 17px;
+            font-weight: normal;
+            font-size: 28px;
+            line-height: 40px;
+            text-align: center;
+            letter-spacing: 0.2px;
+            color: #FFFFFF;
+            margin: 0px 10px;
+        }
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px;
+        width: 1105px;
+        height: 693px;
+        margin: 0 336px 100px 336px;
+    } 
+    &__white {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+        width: 335px;
+        height: 607px;
+        left: 0px;
+        top: 43px;
+        bottom: 143px;
+        background: #FFFFFF;
+        border: 1px solid #DEDEDE;
+        box-sizing: border-box;
+        box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+        border-radius: 10px;
+        margin: 43px 50px 43px 0px;
+        &_text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px;
+            width: 148px;
+            height: 80px;
+            margin: 0px 93.5px 30px 93.5px;
+            h3 {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 28px;
+                letter-spacing: 0.1px;
+                color: $second-color;
+                margin: 0px 10px;
+            }
+            h6 {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 23px;
+                text-align: center;
+                letter-spacing: 0.1px;
+                color: #374754;
+                margin: 0px 0px;
+            }
+        }
+        &_price {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 0px;
+            width: 153px;
+            height: 61px;
+            margin: 0px 91px 0px 91px;
+            .title {
+                width: 75px;
+                height: 104px;
+                margin: 0px 0px;
+            }
+            h1 {
+                width: 100%;
+                padding: 0px 10px;
+                font-weight: 700;
+                font-size: 74px;
+                line-height: 63px;
+                letter-spacing: 0.2px;
+                color: $second-color;
+                margin: 0px 10px;
+            }
+            .block {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0px;
+                width: 78px;
+                height: 51px;
+                margin: 0px 0px;
+            }
+            h3 {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 28px;
+                letter-spacing: 0.1px;
+                color: $second-color;
+                margin: 0px 10px;
+            }
+            h6 {
+                width: 100%;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 23px;
+                letter-spacing: 0.1px;
+                color: $third-color;
+                margin: 0px 10px;
+            }
+        }
+        &_list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px;
+            width: 255px;
+            height: 240px;
+            margin: 30px 0px 30px 0px;
+            li {
+                list-style-type: none;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 48px;
+                letter-spacing: 0.2px;
+                color: $second-color;
+                margin: 0px 10px;
+            }
+        }
+    }
+    &__blue {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 83px 40px;
+        width: 335px;
+        height: 693px;
+        top: 0;
+        bottom: 100px;
+        background: #2091F9;
+        border: 1px solid #DEDEDE;
+        box-sizing: border-box;
+        box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+        border-radius: 10px;
+        &_text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px;
+            width: 148px;
+            height: 80px;
+            margin: 0px 93.5px 30px 93.5px;
+            h3 {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 28px;
+                letter-spacing: 0.1px;
+                color: #FFFFFF;
+                margin: 0px 10px;
+            }
+            h6 {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 23px;
+                text-align: center;
+                letter-spacing: 0.1px;
+                color: #FFFFFF;
+                margin: 0px 0px;
+            }
+        }
+        &_price {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 0px;
+            width: 186px;
+            height: 61px;
+            margin: 0px 74.5px 30px 74.5px;
+            .title {
+                width: 108px;
+                height: 104px;
+                margin: 0px 0px;
+            }
+            h1 {
+                width: 100%;
+                padding: 0px 10px;
+                font-weight: 700;
+                font-size: 74px;
+                line-height: 63px;
+                letter-spacing: 0.2px;
+                color: #FFFFFF;
+                margin: 0px 10px;
+            }
+            .block {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0px;
+                width: 78px;
+                height: 51px;
+                margin: 0px 0px;
+            }
+            h3 {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 28px;
+                letter-spacing: 0.1px;
+                color: #FFFFFF;
+                margin: 0px 10px;
+            }
+            h6 {
+                width: 100%;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 23px;
+                letter-spacing: 0.1px;
+                color: #FFFFFF;
+                margin: 0px 10px;
+            }
+        }
+        &_list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px;
+            width: 255px;
+            height: 240px;
+            margin: 0px 0px 30px 0px;
+            li {
+                list-style-type: none;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 48px;
+                letter-spacing: 0.2px;
+                color: $second-color;
+                margin: 0px 10px;
+            }
+        }
+    }
+    &__white_2 {
+        width: 335px;
+        height: 607px;
+        left: 0px;
+        top: 43px;
+        bottom: 143px;
+        background: #FFFFFF;
+        border: 1px solid #DEDEDE;
+        box-sizing: border-box;
+        box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+        border-radius: 10px;
+        margin: 43px 0px 43px 50px;
+        &_text_2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px;
+            width: 148px;
+            height: 80px;
+            margin: 40px 93.5px 30px 93.5px;
+            h3 {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 28px;
+                letter-spacing: 0.1px;
+                color: $second-color;
+                margin: 0px 10px;
+            }
+            h6 {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 23px;
+                text-align: center;
+                letter-spacing: 0.1px;
+                color: #374754;
+                margin: 0px 0px; 
+            }
+        } 
+        &_price_2 {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 0px;
+            width: 198px;
+            height: 61px;
+            margin: 0px 68.5px 0px 68.5px;
+            .title {
+                width: 120px;
+                height: 104px;
+            }
+            h1 {
+                width: 100%;
+                padding: 0px 10px;
+                font-weight: 700;
+                font-size: 74px;
+                line-height: 63px;
+                letter-spacing: 0.2px;
+                color: $second-color;
+                margin: 0px 10px;
+            }
+            .block {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0px;
+                width: 78px;
+                height: 51px;
+                margin: 0px 0px;
+            }
+            h3 {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 28px;
+                letter-spacing: 0.1px;
+                color: $second-color;
+                margin: 0px 10px;
+            }
+            h6 {
+                width: 100%;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 23px;
+                letter-spacing: 0.1px;
+                color: $third-color;
+                margin: 0px 10px;
+            }
+        }
+        &_list_2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px;
+            width: 255px;
+            height: 240px;
+            margin: 30px 0px 30px 0px;
+            li {
+                list-style-type: none;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 48px;
+                letter-spacing: 0.2px;
+                color: $second-color;
+                margin: 0px 10px;
+            }
+        }
+    }
+}

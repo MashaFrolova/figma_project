@@ -1,0 +1,20 @@
+@import 'libs/fonts';
+@import 'base/variables';
+
+.container {
+    max-width: 1777px;
+    margin: 0 auto;
+}
+* {
+    font-family: 'Graphik', sans-serif;
+}
+
+@import 'blocks/promo';
+@import 'blocks/buttons';
+@import 'blocks/features';
+@import 'blocks/macbook';
+@import 'blocks/partners';
+@import 'blocks/testimonials';
+@import 'blocks/pricing';
+@import 'blocks/contacts';
+@import 'blocks/footer';

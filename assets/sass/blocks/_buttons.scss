@@ -1,0 +1,63 @@
+.button {
+    width: 236px;
+    height: 52px;
+    background: $main-color;
+    border: 1px solid $main-color;
+    border-radius: 35px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px; 
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    cursor: pointer;
+    &:hover {
+        background-image: linear-gradient(to top, $main-color 0%, #4ce2ff 100%);
+		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+    }
+    &_promo {
+         
+        left: 582px;
+        right: 582px;
+        margin: 60px 602px 358px 602px;
+    }
+    &_macbook {
+        margin-top: 60px;
+        font-weight: 700;
+        height: 60px;
+        line-height: 28px;
+    }
+    &_partners {
+        height: 60px;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 28px;
+        margin: 80px 602px 80px 602px;
+    }
+    &_testimonials {
+        width: 276px;
+        height: 60px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        margin: 80px 581.5px 100px 581.5px;
+    }
+    &_pricing {
+        width: 255px;
+        height: 56px;
+        &_blue {
+            background: #FFFFFF;
+            color: $main-color;
+        }
+        &_2 {
+        width: 255px;
+        height: 56px;
+        margin: 0px 40px 40px 40px;
+        }
+    }
+    &_contacts {
+        width: 145px;
+        height: 56px;
+        margin: 45px 258px 52px 0px;
+    }
+}
