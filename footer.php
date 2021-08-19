@@ -66,7 +66,7 @@
     <?php
         wp_footer();
     ?>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDo8LmKnzQb6PFLjbCiE24Q5dBtVztpA9o"></script> // Ваш ключ Google API 
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDo8LmKnzQb6PFLjbCiE24Q5dBtVztpA9o"></script> 
         <script type="text/javascript">
         (function($) {
 

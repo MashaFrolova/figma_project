@@ -1,0 +1,109 @@
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1361.3px;
+    margin: 0;
+    padding-right: 0;
+    &__text {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        width: 552px;
+        height: 182px;
+        margin: 0 auto;
+        padding-bottom: 90px;
+        h2 {
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 55px;
+            text-align: center;
+            letter-spacing: 0.2px;  
+            color: $second-color;
+        }
+        h4 {
+            margin-top: 17px;
+            font-weight: normal;
+            font-size: 28px;
+            line-height: 40px;
+            text-align: center;
+            letter-spacing: 0.2px;
+            color: $third-color; 
+            margin-bottom: 0;  
+            padding: 10px;  
+        }
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: space-between;
+        justify-content: center;
+        margin: 0 auto;        
+        width: 869px;
+        height: 257px;
+        margin-bottom: 132px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 257px;
+        margin-right: 52px;
+    }
+    &__subtitle {
+        margin-top: 10px;        
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: $second-color;
+    }
+    &__descr {
+        margin-top: 10px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: $third-color;
+    }
+video {
+        position: relative;
+        margin: 0 auto;
+        width: 1177.34px;
+        height: 658.3px;
+        left: -59.57px;
+        max-height: 100%;
+        padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+        height: 0;
+        overflow: hidden;
+        &_img {
+            border-radius: 40px;
+        }
+    }
+.play_btn {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 187.4px;
+        height: 187.4px;
+        right: 494.65px;
+        left: 495.3px;
+        top: 235.3px;
+        border-radius: 100%;
+        background-color: $main-color;
+        cursor: pointer;
+        &:hover {
+            background-image: linear-gradient(to top, $main-color 0%, #4ce2ff 100%);
+            text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+        }
+        &_vector {
+            position: absolute;
+            width: 46.85px;
+            height: 46.85px;
+        }
+    }
+}

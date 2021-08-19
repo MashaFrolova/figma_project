@@ -1,0 +1,87 @@
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    padding: 0px;
+    height: 810px;
+    width: 100%; 
+    margin: 0 auto;
+    .container {
+        width: 1439px;
+        height: 810px;
+        margin: 0px 169px 0px 169px;
+        background: #FFFFFF;
+    }
+    &__text {
+        margin: 100px 569px 80px 569px;
+        h2 {
+            font-weight: 400l;
+            font-size: 48px;
+            line-height: 55px;
+            text-align: center;
+            letter-spacing: 0.2px;
+            color: $second-color;
+        }
+    }
+    &__row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+        width: 987px;
+        height: 315px;
+        margin: 80px 226px 80px 226px;
+        h4 {
+            font-weight: normal;
+            font-size: 28px;
+            line-height: 40px;
+            text-align: center;
+            letter-spacing: 0.2px;
+            color: $third-color;
+        }
+    }
+    &__logo {
+        width: 149.85px;
+        height: 60px;
+        margin: 0 auto;
+    }
+    &__client {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        margin: 50px 400.5px 0px 400.5px;
+        &_avatar {
+            width: 50px;
+            height: 50px;
+            margin: 0px 13px;
+        }
+        &_text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 123px;
+            height: 55px;
+            h6 {
+                width: 100%;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 23px;
+                letter-spacing: 0.1px;
+                color: $third-color;
+                padding: 2px 0px;
+                margin: 0px 10px;
+            }
+            p {
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 28px;
+                letter-spacing: 0.2px;
+                color: $second-color;
+                margin: 0px 10px;
+            }
+        }
+    }
+}

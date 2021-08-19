@@ -127,14 +127,41 @@ Template Name: About
             </div>
             <div class="testimonials__row">
                 <img src="<?php the_field('testimonials_icon'); ?>">
-                <h4><?php the_field('testimonials_descr'); ?>
-                </h4>
+                <h4><?php the_field('testimonials_descr'); ?></h4>
                 <div class="testimonials__client">
-                    <img src="<?php echo bloginfo ('template_url');?>/assets/img/avatar.jpg" alt="client" class="testimonials__client_avatar">
-                    <div class="testimonials__client_text">
+
+                    <?php 
+                        $posts = get_posts( array(
+                        'numberposts' => -1,
+                        'category_name'    => 'testimonials_clients',
+                        'orderby'     => 'date',
+                        'order'       => 'ASC',
+                        'post_type'   => 'post',
+                        'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
+                        ) );
+
+                            foreach( $posts as $post ){
+                                setup_postdata($post);
+                            ?>
+                                <div class="testimonials__client_avatar">
+                                    <img src="<?php echo bloginfo ('template_url');?>/assets/img/avatar.jpg" alt="client">
+                                </div>
+                                <div class="testimonials__client_text">
+                                    <h6><?php the_field('testimonials_text'); ?></h6>
+                                    <p><?php the_field('testimonials_title'); ?></p>
+                                </div>
+                               
+                            <?php
+                        }
+                            wp_reset_postdata(); // сброс
+                    ?>
+                        
+                    
+                
+                <!-- <div class="testimonials__client_text">
                         <h6><?php the_field('testimonials_text'); ?></h6>
                         <p><?php the_field('testimonials_title'); ?></p>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <button class="button button_testimonials">More Testimonials</button>
