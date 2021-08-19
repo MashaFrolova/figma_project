@@ -22,22 +22,23 @@ Template Name: Pricing
                 <h4><?php the_field('pricing_descr'); ?></h4>
             </div>
             <div class="pricing__items">
-                <?php 
-                    $posts = get_posts( array(
-                    'numberposts' => -1,
-                    'category_name'    => 'pricing_items_white',
-                    'orderby'     => 'date',
-                    'order'       => 'ASC',
-                    'post_type'   => 'post',
-                    'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
-                    ) );
-                        foreach( $posts as $post ){
-                            setup_postdata($post);
-                        ?>               
-                            <div class="pricing__white">
+                <div class="pricing__white">
+                    <?php 
+                        $posts = get_posts( array(
+                        'numberposts' => -1,
+                        'category_name'    => 'pricings_items_white',
+                        'orderby'     => 'date',
+                        'order'       => 'ASC',
+                        'post_type'   => 'post',
+                        'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
+                        ) );
+
+                            foreach( $posts as $post ){
+                                setup_postdata($post);
+                                ?>
                                 <div class="pricing__white_text">
                                     <h3><?php the_field('item_title'); ?></h3>
-                                     <h6><?php the_field('item_descr'); ?></h6>
+                                    <h6><?php the_field('item_descr'); ?></h6>
                                 </div>
                                 <div class="pricing__white_price">
                                     <div class="title">
@@ -47,16 +48,21 @@ Template Name: Pricing
                                         <h3>$</h3>
                                         <h6>Per Month</h6>
                                     </div>
-                                </div>
-                                <ul class="pricing__white_list">
-                                    <li>Pricing Feature</li>
-                                    <li>Pricing Feature</li>
-                                    <li>Pricing Feature</li>
-                                    <li>Pricing Feature</li>
-                                    <li>Pricing Feature</li>
-                                </ul>
-                                <button class="button button_pricing">Order Now</button>
-                            </div>
+                                    <div>
+                                        <ul class="pricing__white_list">
+                                            <?php the_field('item_list'); ?>
+                                        </ul>
+                                    </div>
+                                <?php
+                            }
+
+                            wp_reset_postdata(); // сброс
+                     ?>
+                </div>    
+                <div>
+                    <button class="button button_pricing">Order Now</button>
+                </div>
+            </div>
                             <!-- <div class="pricing__blue">
                                 <div class="pricing__blue_text">
                                     <h3>STANDARD</h3>
@@ -105,11 +111,9 @@ Template Name: Pricing
                                 </ul>
                                 <button class="button button_pricing_2">Order Now</button>
                             </div> -->
-                            <?php
-                        }
-                            wp_reset_postdata(); // сброс
-                ?>
-            </div>
+                            <!--
+        
+            <!-- </div> -->
         </div>
     </div>
 

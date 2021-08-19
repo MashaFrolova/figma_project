@@ -19,6 +19,8 @@
   "devDependencies": {
     "@wordpress/scripts": "^12.1.0",
     "dir-archiver": "^1.1.1",
+    "gulp-sass": "^5.0.0",
+    "gulp-watch": "^5.0.1",
     "node-sass": "^4.14.1",
     "rtlcss": "^2.5.0"
   },
@@ -42,5 +44,16 @@
     "lint:scss": "wp-scripts lint-style 'sass/**/*.scss'",
     "lint:js": "wp-scripts lint-js 'js/*.js'",
     "bundle": "dir-archiver --src . --dest ../_s.zip --exclude .DS_Store .stylelintrc.json .eslintrc .git .gitattributes .github .gitignore README.md composer.json composer.lock node_modules vendor package-lock.json package.json .travis.yml phpcs.xml.dist sass style.css.map"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.3.1",
+    "browser-sync": "^2.27.5",
+    "clean-css": "^5.1.5",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-include": "^2.4.1",
+    "gulp-rename": "^2.0.0",
+    "mailer": "^0.6.7"
   }
 }

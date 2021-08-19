@@ -1,3 +1,14 @@
+//= include ../components/bower/fastclick/lib/fastclick.js
+//= include ../components/bower/foundation/js/vendor/modernizr.js
+//= include ../components/bower/foundation/js/foundation/foundation.js
+//= include ../components/bower/foundation/js/foundation/foundation.reveal.js
+//= include ../components/bower/foundation/js/foundation/foundation.dropdown.js
+//= include ../components/bower/foundation/js/foundation/foundation.alert.js
+ 
+//= include stickybar.js
+ 
+jQuery(document).foundation();
+
 function validateForms(form){
     $(form).validate({
         rules: {
