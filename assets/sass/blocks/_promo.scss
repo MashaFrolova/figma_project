@@ -5,6 +5,7 @@
     height: 1042px;
     background: url('./assets/img/main_bg.jpg') center center/cover no-repeat;
     margin: 0 auto;
+    
     .header {
         margin: 0 auto;        
         nav {            
@@ -66,11 +67,10 @@
             left: 307px;
             top: 80px;
             margin: 0 auto;
-            h1 {
-                font-style: normal;
-                font-weight: bold;
+            h1{
+                font-weight: 900;
                 font-size: 74px;
-                line-height: 40px;
+                line-height: 84px;
                 text-align: center;
                 letter-spacing: 0.2px;
                 color: #FFFFFF;

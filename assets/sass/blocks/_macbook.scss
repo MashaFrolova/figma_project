@@ -5,8 +5,9 @@
     height: 924px;
     background: #FFFFFF;
     margin: 0 auto;
+    margin-top: 0;
     .container {
-        padding: 226px 82px;
+        padding: 80px 82px 0px 82px;
     }
     &__wrapper {
         display: flex;

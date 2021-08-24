@@ -7,7 +7,21 @@ Template Name: About
 <?php 
     get_header();
 ?>
-     <div class="partners">
+    <div class="subscribe">
+        <div class="container">
+            <div class="subscribe__picture">
+                <img src="<?php echo bloginfo ('template_url');?>/assets/img/newsletter.png" alt="newsletter">
+            </div>
+            <div class="subscribe__wrapper">
+                <div class="subscribe__wrapper_text">
+                    <h3>At your fingertips</h3>
+                    <h2>Lightning fast <br>prototyping </h2>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="partners">
         <div class="container">
             <div class="partners__text">
                 <h2 style="<?php
@@ -18,7 +32,7 @@ Template Name: About
                                 <?php
                                 }
                             ?>
-                            "><?php the_field('parners_title'); ?></h2>
+                            "><?php the_field('partners_title'); ?></h2>
                 <h4><?php the_field('partners_descr'); ?></h4>
             </div>
             <div class="partners__items">
@@ -46,13 +60,13 @@ Template Name: About
                         wp_reset_postdata(); // сброс
                     ?>
                 </div>    
-                <div class="partners__row2">
+                <div class="partners__row_2">
                     <?php 
                         $posts = get_posts( array(
                         'numberposts' => -1,
                         'category_name'    => 'partners_items_2',
-                        'orderby'     => 'date',
-                        'order'       => 'ASC',
+                        'orderby'     => 'data',
+                        'order'       => 'DESC',
                         'post_type'   => 'post',
                         'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
                         ) );
@@ -60,59 +74,20 @@ Template Name: About
                             foreach( $posts as $post ){
                                 setup_postdata($post);
                                 ?>
-                                    <div class="partners__row2_item">
-                                        <h6><?php the_field('partners_title'); ?></h6>
-                                        <img src="<?php the_field('partners_icon'); ?>">
-                                    </div>
-                                <?php
-                            }
+                                <div class="partners__row_2_item">
+                                    <h6><?php the_field('partners_title '); ?></h6>
+                                    <img src="<?php the_field('partners_icon'); ?>">
+                                </div>
+                            <?php
+                        }
 
                         wp_reset_postdata(); // сброс
                     ?>
                 </div>
-                <div>
-                    <button class="button button_partners">Try For Free</button>
-                </div>
-            </div>
-                    <!-- <div class="partners__row_item">
-                        <h6>Client Name</h6>
-                        <img src="<?php echo bloginfo ('template_url');?>/assets/img/partners/google.png" alt="google">
-                    </div>
-                    <div class="partners__row_item">
-                        <h6>Client Name</h6>
-                        <img src="<?php echo bloginfo ('template_url');?>/assets/img/partners/amazon.png" alt="amazon">
-                    </div>
-                    <div class="partners__row_item">
-                        <h6>Client Name</h6>
-                        <img src="<?php echo bloginfo ('template_url');?>/assets/img/partners/microsoft.png" alt="microsoft">
-                    </div>
-                    <div class="partners__row_item">
-                        <h6>Client Name</h6>
-                        <img src="<?php echo bloginfo ('template_url');?>/assets/img/partners/uber.png" alt="uber">
-                    </div>
-                </div>
-                <div class="partners__row2">
-                    <div class="partners__row2_item_dropbox">
-                        <h6>Client Name</h6>
-                        <img src="<?php echo bloginfo ('template_url');?>/assets/img/partners/dropbox.png" alt="dropbox">
-                    </div>
-                    <div class="partners__row2_item">
-                        <h6>Client Name</h6>
-                        <img src="<?php echo bloginfo ('template_url');?>/assets/img/partners/google.png" alt="google">
-                    </div>
-                    <div class="partners__row2_item">
-                        <h6>Client Name</h6>
-                        <img src="<?php echo bloginfo ('template_url');?>/assets/img/partners/uber.png" alt="uber">
-                    </div>
-                    <div class="partners__row2_item">
-                        <h6>Client Name</h6>
-                        <img src="<?php echo bloginfo ('template_url');?>/assets/img/partners/amazon.png" alt="amazon">
-                    </div>
-                </div>
             </div>
             <button class="button button_partners">Try For Free</button>
         </div>
-    </div> -->
+    </div>               
     <div class="testimonials">
         <div class="container">
             <div class="testimonials__text">
@@ -155,13 +130,6 @@ Template Name: About
                         }
                             wp_reset_postdata(); // сброс
                     ?>
-                        
-                    
-                
-                <!-- <div class="testimonials__client_text">
-                        <h6><?php the_field('testimonials_text'); ?></h6>
-                        <p><?php the_field('testimonials_title'); ?></p>
-                    </div> -->
                 </div>
             </div>
             <button class="button button_testimonials">More Testimonials</button>
