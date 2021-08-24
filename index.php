@@ -8,7 +8,6 @@
         </video>
         <button class="features__video_play"><img class="features__video_play_vector" src="<?php echo bloginfo ('template_url');?>/assets/img/icons/Vector.png" alt="vector"></button>
     </div>    
-   
     
 <?php
     get_footer();

@@ -17,8 +17,17 @@ Template Name: About
                     <h3>At your fingertips</h3>
                     <h2>Lightning fast <br>prototyping </h2>
                 </div>
-                <div class="subscribe_form">
-                    
+                <div class="subscribe__wrapper_form">
+                    <h3>
+                        Subscribe to our Newsletter
+                    </h3>
+                    <p>
+                        Available exclusivery on Figmaland
+                    </p>
+                    <form action="#">
+                        <input name="email" required placeholder="Your Email" type="email"> 
+                        <button class="button button_subscribe">Subscribe</button>
+                    </form>
                 </div>
             </div>
         </div>
