@@ -17,7 +17,9 @@ Template Name: About
                     <h3>At your fingertips</h3>
                     <h2>Lightning fast <br>prototyping </h2>
                 </div>
-                
+                <div class="subscribe_form">
+                    
+                </div>
             </div>
         </div>
     </div>
