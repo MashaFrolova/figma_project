@@ -5,13 +5,24 @@
                     <div class="footer__menu_pages">
                         <h3>Pages</h3>
                         <nav>
-                            <ul>
+                            <?php 
+                                wp_nav_menu( [
+                                    'menu'            => 'Main', 
+                                    'container'       => false, 
+                                    'menu_class'      => 'footer__menu',
+                                    'echo'            => true,
+                                    'fallback_cb'     => 'wp_page_menu',
+                                    'items_wrap'      => '<ul class="footer__menu_link">%3$s</ul>',
+                                    'depth'           => 1
+                                ] );
+                            ?>
+                            <!-- <ul>
                                 <li><a class="footer__menu_link" href="#">Home</a></li>
                                 <li><a class="footer__menu_link" href="#">Product</a></li>
                                 <li><a class="footer__menu_link" href="#">Pricing</a></li>
                                 <li><a class="footer__menu_link" href="#">About</a></li>
                                 <li><a class="footer__menu_link" href="#">Contact</a></li>
-                            </ul>
+                            </ul> -->
                         </nav>
                     </div>
                     <div class="footer__menu_tomothy">

@@ -25,6 +25,15 @@ function filter_nav_menu_link_attributes($atts, $item, $args) {
         }
     };
 
+    if ($args->menu === 'Main') {
+        $atts['class'] = 'footer__menu_link';
+
+        if ($item->current) {
+            $atts['class'] .= ' footer__menu_link-active';
+        }
+    };
+
+
     return $atts;
 }
 
