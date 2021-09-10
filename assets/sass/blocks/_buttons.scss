@@ -45,14 +45,11 @@
     &_pricing {
         width: 255px;
         height: 56px;
+        margin: 30px 40px 40px 40px;
         &_blue {
             background: #FFFFFF;
             color: $main-color;
-        }
-        &_2 {
-        width: 255px;
-        height: 56px;
-        margin: 0px 40px 40px 40px;
+            margin: 0;
         }
     }
     &_contacts {

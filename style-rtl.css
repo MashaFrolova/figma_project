@@ -559,7 +559,6 @@ Theme Name: figma_project
     height: 693px;
     margin: 0 336px 100px 336px; }
   .pricing__white {
-    order: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -584,7 +583,7 @@ Theme Name: figma_project
       height: 80px;
       margin: 0px 93.5px 30px 93.5px; }
       .pricing__white_text h3 {
-        font-weight: 700;
+        font-weight: 900;
         font-size: 20px;
         line-height: 28px;
         letter-spacing: 0.1px;
@@ -649,17 +648,15 @@ Theme Name: figma_project
       padding: 0px;
       width: 255px;
       height: 240px;
-      margin: 30px 0px 30px 0px; }
-      .pricing__white_list li {
-        list-style-type: none;
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 48px;
-        letter-spacing: 0.2px;
-        color: #252B42;
-        margin: 0px 10px; }
+      margin: 30px 0px 30px 0px;
+      list-style-type: none;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 48px;
+      letter-spacing: 0.2px;
+      color: #252B42;
+      margin: 0px 10px; }
   .pricing__blue {
-    order: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -682,7 +679,7 @@ Theme Name: figma_project
       height: 80px;
       margin: 0px 93.5px 30px 93.5px; }
       .pricing__blue_text h3 {
-        font-weight: 700;
+        font-weight: 900;
         font-size: 20px;
         line-height: 28px;
         letter-spacing: 0.1px;
@@ -777,7 +774,7 @@ Theme Name: figma_project
       height: 80px;
       margin: 40px 93.5px 30px 93.5px; }
       .pricing__white_2_text_2 h3 {
-        font-weight: 700;
+        font-weight: 900;
         font-size: 20px;
         line-height: 28px;
         letter-spacing: 0.1px;

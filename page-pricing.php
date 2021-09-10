@@ -53,7 +53,7 @@
                                     <ul class="pricing__white_list">
                                         <?php the_field ('item_list'); ?>
                                     </ul>
-                                    <button class="button button_pricing_white">Order Now</button>
+                                    <button class="button button_pricing">Order Now</button>
                                 </div>
 
                             <?php
@@ -127,7 +127,7 @@
                                     <ul class="pricing__white_2_list_2">
                                         <?php the_field ('item_list'); ?>
                                     </ul>
-                                    <button class="button button_pricing_whte">Order Now</button>
+                                    <button class="button button_pricing">Order Now</button>
                                 </div>
                             <?php
                         }
