@@ -24,10 +24,22 @@ Template Name: About
                     <p>
                         Available exclusivery on Figmaland
                     </p>
-                    <form action="#">
+                    <div>
+                        <!-- <?php echo do_shortcode( '[contact-form-7 id="294" title="Subscribe_form"]' ); ?> -->
+                        <form action="#">
+                            <input name="email" required placeholder="Your Email" type="email"> 
+                            <button class="button button_subscribe">Subscribe</button>
+                        </form> 
+                    </div> 
+
+                    <!-- <?php echo do_shortcode( '[contact-form-7 id="294" title="Subscribe_form"]' ); ?> -->
+                    <!-- <input name="email" required placeholder="Your Email" type="email">  --> 
+                        <!-- <!-- <button class="button button_subscribe">Subscribe</button>
+
+                    <!-- <form action="#">[contact-form-7 id="294" title="Без названия"]
                         <input name="email" required placeholder="Your Email" type="email"> 
-                        <button class="button button_subscribe">Subscribe</button>
-                    </form>
+                        
+                    </form> -->
                 </div>
             </div>
         </div>

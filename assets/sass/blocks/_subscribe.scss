@@ -63,12 +63,23 @@
                 color: $third-color;
                 margin: 0px 166px 0px 10px;
             }
-            form {
+            div {   
                 display: flex;
-                flex-direction: row;
+                flex-direction: row; 
+                align-items: center;            
                 width: 457px;
                 height: 126px;
+                margin: 0px 10px 10px 10px;
+                form {
+                    display: flex;
+                    flex-direction: row; 
+                    align-items: center;  
+                    width: 457px;
+                    height: 126px; 
+                }
                 input {
+                    width: 273px;
+                    height: 54px;
                     padding: 19px 39px;
                     margin: 36px 12px 36px 0px;
                     background: #F4F4F4;
@@ -81,7 +92,6 @@
                     line-height: 16px;
                     letter-spacing: 0.1px;
                     color: #18171D;
-
                 }
             }
         }
