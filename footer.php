@@ -1,10 +1,10 @@
 <footer class="footer">
-        <div class="container">
-            <div class="footer__wrapper">
-                <div class="footer__menu">
-                    <div class="footer__menu_pages">
-                        <h3>Pages</h3>
-                        <nav>
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__menu">
+                <div class="footer__menu_pages">
+                    <h3>Pages</h3>
+                    <nav>
                             <?php 
                                 wp_nav_menu( [
                                     'menu'            => 'Main', 
@@ -16,39 +16,31 @@
                                     'depth'           => 1
                                 ] );
                             ?>
-                            <!-- <ul>
-                                <li><a class="footer__menu_link" href="#">Home</a></li>
-                                <li><a class="footer__menu_link" href="#">Product</a></li>
-                                <li><a class="footer__menu_link" href="#">Pricing</a></li>
-                                <li><a class="footer__menu_link" href="#">About</a></li>
-                                <li><a class="footer__menu_link" href="#">Contact</a></li>
-                            </ul> -->
-                        </nav>
-                    </div>
-                    <div class="footer__menu_tomothy">
-                        <h3>Tomothy </h3>
-                        <nav>
-                            <ul>
-                                <li>Eleanor Edwards</li>
-                                    <li>Ted Robertson</li>
-                                    <li>Annette Russell</li>
-                                    <li>Jennie Mckinney</li>
-                                    <li>Gloria Richards</li>    
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="footer__menu_jane">
-                        <h3>Jane Black</h3>
-                        <nav>
-                            <ul>
-                                <li>Philip Jones</li>
-                                <li>Product</li>
-                                <li>Colleen Russell</li>
-                                <li>Marvin Hawkins</li>
-                                <li>Bruce Simmmons</li>
-                            </ul> 
-                        </nav>
-                    </div>
+                    </nav>
+                </div>
+                <div class="footer__menu_tomothy">
+                    <h3>Tomothy </h3>
+                    <nav>
+                        <ul>
+                            <li>Eleanor Edwards</li>
+                            <li>Ted Robertson</li>
+                            <li>Annette Russell</li>
+                            <li>Jennie Mckinney</li>
+                            <li>Gloria Richards</li>    
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__menu_jane">
+                    <h3>Jane Black</h3>
+                    <nav>
+                        <ul>
+                            <li>Philip Jones</li>
+                            <li>Product</li>
+                            <li>Colleen Russell</li>
+                            <li>Marvin Hawkins</li>
+                            <li>Bruce Simmmons</li>
+                        </ul> 
+                    </nav>
                 </div>
                 <div class="footer__contacts">
                     <div class="footer__contacts_adress">
@@ -73,13 +65,16 @@
                 </div>
             </div>
         </div>
-    </footer>
-    <?php
-        wp_footer();
-    ?>
+    </div>
+</footer>
+<?php
+    wp_footer();
+?>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDo8LmKnzQb6PFLjbCiE24Q5dBtVztpA9o"></script> 
-        <script type="text/javascript">
-        (function($) {
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+   
+    (function($) { -->
 
         /*
         *  new_map
@@ -94,44 +89,44 @@
         *  @return	n/a
         */
 
-        function new_map( $el ) {
+            function new_map( $el ) {
             
             // Переменные
-            var $markers = $el.find('.marker');
+                var $markers = $el.find('.marker');
             
             
             // Переменные
-            var args = {
-                zoom		: 16,
-                center		: new google.maps.LatLng(0, 0),
-                mapTypeId	: google.maps.MapTypeId.ROADMAP
-            };
+                var args = {
+                    zoom		: 16,
+                    center		: new google.maps.LatLng(0, 0),
+                    mapTypeId	: google.maps.MapTypeId.ROADMAP
+                };
             
             
             // Создаем карту	        	
-            var map = new google.maps.Map( $el[0], args);
+                var map = new google.maps.Map( $el[0], args);
             
             
             // Создаем заготовку массива маркеров
-            map.markers = [];
+                map.markers = [];
             
             
             // Добавляем маркеры
-            $markers.each(function(){
+                $markers.each(function(){
                 
-                add_marker( $(this), map );
+                    add_marker( $(this), map );
                 
-            });
+                });
             
             
             // Центрируем карту
-            center_map( map );
+                center_map( map );
             
             
             // Возвращаем данные
-            return map;
+                return map;
             
-        }
+            }
 
         /*
         *  add_marker
@@ -147,37 +142,37 @@
         *  @return	n/a
         */
 
-        function add_marker( $marker, map ) {
+            function add_marker( $marker, map ) {
 
             // Переменные
-            var latlng = new google.maps.LatLng( $marker.attr('data-lat'), $marker.attr('data-lng') );
+                var latlng = new google.maps.LatLng( $marker.attr('data-lat'), $marker.attr('data-lng') );
 
             // Создаем маркер
-            var marker = new google.maps.Marker({
-                position	: latlng,
-                map			: map
-            });
+                var marker = new google.maps.Marker({
+                    position	: latlng,
+                    map			: map
+                });
 
             // Добавляем маркер в массив
-            map.markers.push( marker );
+                map.markers.push( marker );
 
             // Если маркер содержит HTML, добавим его в infoWindow
-            if( $marker.html() )
-            {
+                if( $marker.html() )
+                {
                 // оздаем info window
-                var infowindow = new google.maps.InfoWindow({
-                    content		: $marker.html()
-                });
+                    var infowindow = new google.maps.InfoWindow({
+                        content		: $marker.html()
+                    });
 
                 // Показываем info window при нажатии на маркер
-                google.maps.event.addListener(marker, 'click', function() {
+                    google.maps.event.addListener(marker, 'click', function() {
 
-                    infowindow.open( map, marker );
+                        infowindow.open( map, marker );
 
-                });
+                    });
+                }
+
             }
-
-        }
 
         /*
         *  center_map
@@ -192,34 +187,34 @@
         *  @return	n/a
         */
 
-        function center_map( map ) {
+            function center_map( map ) {
 
             // Переменные
-            var bounds = new google.maps.LatLngBounds();
+                var bounds = new google.maps.LatLngBounds();
 
             // Перебираем все маркеры и создаем bounds
-            $.each( map.markers, function( i, marker ){
+                $.each( map.markers, function( i, marker ){
 
-                var latlng = new google.maps.LatLng( marker.position.lat(), marker.position.lng() );
+                    var latlng = new google.maps.LatLng( marker.position.lat(), marker.position.lng() );
 
-                bounds.extend( latlng );
+                    bounds.extend( latlng );
 
-            });
+                });
 
             // Только 1 маркер?
-            if( map.markers.length == 1 )
-            {
+                if( map.markers.length == 1 )
+                {
                 // Центрируем карту
-                map.setCenter( bounds.getCenter() );
-                map.setZoom( 16 );
-            }
-            else
-            {
+                    map.setCenter( bounds.getCenter() );
+                    map.setZoom( 16 );
+                }
+                else
+                {
                 // fit to bounds
-                map.fitBounds( bounds );
-            }
+                 map.fitBounds( bounds );
+                }
 
-        }
+            }
 
         /*
         *  document ready
@@ -234,20 +229,21 @@
         *  @return	n/a
         */
         // global var
-        var map = null;
+            var map = null;
 
-        $(document).ready(function(){
+            $(document).ready(function(){
 
-            $('.acf-map').each(function(){
+                $('.acf-map').each(function(){
 
                 // Создаем карту
                 map = new_map( $(this) );
 
-            });
+                });
 
-        });
+            }); -->
 
-        })(jQuery);
-</script>
-</body>
+            })(jQuery);
+            </script>
+        </div>
+    </body>
 </html>

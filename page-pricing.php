@@ -8,7 +8,7 @@
     get_header();
 ?>
 
-    <div class="pricing">
+    <section class="pricing">
         <div class="container">
             <div class="pricing__text">
                 <h2 style="<?php
@@ -136,7 +136,7 @@
                 ?>
             </div> 
         </div>   
-    </div>              
+    </section>              
 
 <?php
     get_footer();

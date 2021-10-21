@@ -7,44 +7,37 @@ Template Name: About
 <?php 
     get_header();
 ?>
-    <div class="subscribe">
+    <section class="subscribe">
         <div class="container">
-            <div class="subscribe__picture">
-                <img src="<?php echo bloginfo ('template_url');?>/assets/img/newsletter.png" alt="newsletter">
-            </div>
             <div class="subscribe__wrapper">
-                <div class="subscribe__wrapper_text">
-                    <h3>At your fingertips</h3>
-                    <h2>Lightning fast <br>prototyping </h2>
+                <div class="subscribe__wrapper_picture">
+                    <img src="<?php echo bloginfo ('template_url');?>/assets/img/newsletter.png" alt="newsletter">
                 </div>
-                <div class="subscribe__wrapper_form">
-                    <h3>
-                        Subscribe to our Newsletter
-                    </h3>
-                    <p>
-                        Available exclusivery on Figmaland
-                    </p>
-                    <div>
-                        <!-- <?php echo do_shortcode( '[contact-form-7 id="294" title="Subscribe_form"]' ); ?> -->
-                        <form action="#">
-                            <input name="email" required placeholder="Your Email" type="email"> 
-                            <button class="button button_subscribe">Subscribe</button>
-                        </form> 
-                    </div> 
-
-                    <!-- <?php echo do_shortcode( '[contact-form-7 id="294" title="Subscribe_form"]' ); ?> -->
-                    <!-- <input name="email" required placeholder="Your Email" type="email">  --> 
-                        <!-- <!-- <button class="button button_subscribe">Subscribe</button>
-
-                    <!-- <form action="#">[contact-form-7 id="294" title="Без названия"]
-                        <input name="email" required placeholder="Your Email" type="email"> 
-                        
-                    </form> -->
+                <div class="subscribe__wrapper_content">
+                    <div class="subscribe__wrapper_content_text">
+                        <h3>At your fingertips</h3>
+                        <h2>Lightning fast <br>prototyping </h2>
+                    </div>
+                    <div class="subscribe__wrapper_content_form">
+                        <h3>
+                            Subscribe to our Newsletter
+                        </h3>
+                        <p>
+                            Available exclusivery on Figmaland
+                        </p>
+                        <div>
+                            <!-- <?php echo do_shortcode( '[contact-form-7 id="294" title="Subscribe_form"]' ); ?> -->
+                            <form action="#">
+                                <input name="email" required placeholder="Your Email" type="email"> 
+                                <button class="button button_subscribe">Subscribe</button>
+                            </form> 
+                        </div> 
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="partners">
+    </section>
+    <section class="partners">
         <div class="container">
             <div class="partners__text">
                 <h2 style="<?php
@@ -110,7 +103,7 @@ Template Name: About
             </div>
             <button class="button button_partners">Try For Free</button>
         </div>
-    </div>               
+    </section>               
     <div class="testimonials">
         <div class="container">
             <div class="testimonials__text">
@@ -124,9 +117,11 @@ Template Name: About
                             ?>"><?php the_field('testimonials_title'); ?></h2>
             </div>
             <div class="testimonials__row">
-                <img src="<?php the_field('testimonials_icon'); ?>">
+                <div class="testimonials__row_logo">
+                    <img src="<?php the_field('testimonials_icon'); ?>">
+                </div>
                 <h4><?php the_field('testimonials_descr'); ?></h4>
-                <div class="testimonials__client">
+                <div class="testimonials__row_client">
 
                     <?php 
                         $posts = get_posts( array(
@@ -141,10 +136,10 @@ Template Name: About
                             foreach( $posts as $post ){
                                 setup_postdata($post);
                             ?>
-                                <div class="testimonials__client_avatar">
+                                <div class="testimonials__row_client_avatar">
                                     <img src="<?php echo bloginfo ('template_url');?>/assets/img/avatar.jpg" alt="client">
                                 </div>
-                                <div class="testimonials__client_text">
+                                <div class="testimonials__row_client_text">
                                     <h6><?php the_field('testimonials_text'); ?></h6>
                                     <p><?php the_field('testimonials_title'); ?></p>
                                 </div>
@@ -155,7 +150,9 @@ Template Name: About
                     ?>
                 </div>
             </div>
-            <button class="button button_testimonials">More Testimonials</button>
+            <div class="testimonials__button">
+                <button class="button button_testimonials">More Testimonials</button>
+            </div>
         </div>
     </div>
 

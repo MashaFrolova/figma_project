@@ -8,7 +8,7 @@ Template Name: Product
     get_header();
 ?>
 
-    <div class="features">
+    <section class="features">
         <div class="container">    
             <div class="features__text">
                 <h2 style="<?php
@@ -56,8 +56,8 @@ Template Name: Product
                 ?>
             </div>         
         </div>
-    </div>
-    <div class="macbook">
+    </section>
+    <section class="macbook">
         <div class="container">
             <div class="macbook__wrapper">
                 <div class="macbook__content">
@@ -70,7 +70,7 @@ Template Name: Product
                 </div>
             </div>            
         </div>
-    </div>
+    </section>
 
 <?php
     get_footer();

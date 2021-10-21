@@ -14,56 +14,59 @@
     ?>
 </head>
 <body>
-    <div class="promo">
-        <header>
-                <nav>
+    <section class="promo">
+        <div class="container">            
+            <header>
+                
+                <nav class="menu-main">
                     <?php 
                         wp_nav_menu( [
-                            'menu'            => 'Main', 
-                            'container'       => false, 
-                            'menu_class'      => 'header__menu',
-                            'echo'            => true,
-                            'fallback_cb'     => 'wp_page_menu',
-                            'items_wrap'      => '<ul class="header__menu_link">%3$s</ul>',
-                            'depth'           => 1
+                        'menu'            => 'Main', 
+                        'container'       => false, 
+                        'menu_class'      => 'header__menu',
+                        'echo'            => true,
+                        'fallback_cb'     => 'wp_page_menu',
+                        'items_wrap'      => '<ul class="header__menu_link">%3$s</ul>',
+                        'depth'           => 1
                         ] );
                     ?>
-                    <!-- <ul class="header__menu">
-                        <li><a class="header__menu_link" href="#">Home</a></li>
-                        <li><a class="header__menu_link" href="#">Product</a></li>
-                        <li><a class="header__menu_link" href="#">Pricing</a></li>
-                        <li><a class="header__menu_link" href="#">About</a></li>
-                        <li><a class="header__menu_link" href="#">Contact</a></li>
-                    </ul>     -->
                 </nav>  
                 <div class="header__logo">
-                        <a href="<?php echo get_home_url(); ?>">
-                            <img src="<?php
-                                $custom_logo__url = wp_get_attachment_image_src( get_theme_mod( 'custom_logo' ), 'full' );
-                                echo $custom_logo__url[0]; 
-                            ?>" alt="logo">
-                        </a>                            
-                    </div>
-                    <div class="header__social">
-                        <a href="<?php the_field ('twitter',2); ?>" class="header__menu_social_link">
-                            <img src="<?php echo bloginfo ('template_url');?>/assets/img/icons/social/twitter.svg" alt="twitter">
-                        </a>
-                        <a href="<?php the_field ('facebook',2); ?>" class="header__menu_social_link">
-                            <img src="<?php echo bloginfo ('template_url');?>/assets/img/icons/social/fb.svg" alt="facebook">
-                        </a>
-                        <a href="<?php the_field ('linkedin',2); ?>" class="header__menu_social_link">
-                            <img src="<?php echo bloginfo ('template_url');?>/assets/img/icons/social/link.svg" alt="linkedin">
-                        </a>
-                    </div>               
-        </header>
-        <div class="content">
+                    <a href="<?php echo get_home_url(); ?>">
+                        <img src="<?php
+                            $custom_logo__url = wp_get_attachment_image_src( get_theme_mod( 'custom_logo' ), 'full' );
+                            echo $custom_logo__url[0]; 
+                        ?>" alt="logo">
+                    </a>                            
+                </div>
+                <div class="header__social">
+                    <a href="<?php the_field ('twitter',2); ?>" class="header__menu_social_link">
+                        <img src="<?php echo bloginfo ('template_url');?>/assets/img/icons/social/twitter.svg" alt="twitter">
+                    </a>
+                    <a href="<?php the_field ('facebook',2); ?>" class="header__menu_social_link">
+                        <img src="<?php echo bloginfo ('template_url');?>/assets/img/icons/social/fb.svg" alt="facebook">
+                    </a>
+                    <a href="<?php the_field ('linkedin',2); ?>" class="header__menu_social_link">
+                        <img src="<?php echo bloginfo ('template_url');?>/assets/img/icons/social/link.svg" alt="linkedin">
+                    </a>
+                </div> 
+                <div class="hamburger">
+                    <div class="hamburger__span">
+                        <span class="long"></span>
+                        <span class="middle"></span>
+                         <span class="short"></span>
+                    </div> 
+                </div>          
+            </header>
+            <div class="content">
                 <div class="content__text">
                     <h1><?php the_field('home_title',2); ?></h1>
                     <h4><?php the_field('home_descr'); ?></h4>
                 </div>
-                <div>
-                    <button class="button button_promo">Try For Free</button>
-                </div>                
-            </div>
+            <div>
+                <button class="button button_promo">Try For Free</button>
+            </div>                
         </div>
+    </section>
+    
         

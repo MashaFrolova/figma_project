@@ -1,79 +1,79 @@
-.promo {
+.promo{
+    height: 1042px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 1042px;
     background: url('./assets/img/main_bg.jpg') center center/cover no-repeat;
-    margin: 0 auto;
+    padding-bottom: 80px;
     header {
         display: flex;
         flex-direction: row;
         width: 1210px;
         height: 156px;
-        padding-top: 1px;
-        margin: 0px 283.27px 0px 282.27px;
-        nav{
+        margin: 4px 283.5px 0px 282.5px;
+        nav {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
             width: 437px;
             height: 48px;
             margin: 53.5px 5.5px 54.5px 40px;
         }      
         ul {    
             display: flex;
+            flex-direction: row;
             justify-content: space-between;
             text-align: center;
             list-style-type: none;
+            padding: 10px;            
+            li { 
+                margin-right: 10px;
+                padding-right: 10px;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 28px;
+                text-decoration: none;
+                    color: #ffff;  
+                    &:last-child {
+                        margin-right: none;
+                    }
+                }                           
+            }
         }
-    }      
-    .header__menu{
-        width: 100%;
-        height: 100%;
-        margin: 0 auto; 
-        padding: 10px 21px 10px 0px;              
-        &_link {
-            padding-right: 21px;
-            font-weight: 400;
-            font-size: 15px;
-            line-height: 28px;
-            text-decoration: none;
-            color: #ffff;
+        .header__logo {
+            display: inline;
+            width: 246px;
+            height: 78px;
+            margin: 39px 270.54px 39px 0px;
         }
-    }
-    .header__logo {
-        display: inline;
-        margin: 39px 270.54px 39px 0px;
-        width: 246px;
-        height: 78px;
-    }
-    .header__social {
-        display: flex;
-        justify-content: space-between;
-        width: 170.96px;
-        height: 40.99px;
-        margin: 56.51px 40px 58.51px 0px;
-        a {
-            width: 40.99px;
+        .header__social {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 170.96px;
             height: 40.99px;
-            margin-right: 24px;
+            margin: 56.51px 40px 58.51px 0px;
+            a {
+                width: 40.99px;
+                height: 40.99px;
+                margin-right: 24px;
+            }
         }
-    }
-    .content {
+        .content {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 80px 0px;
         width: 1440px;
         height: 885px;
-        margin: 0px 168.5px 160px 167.27px;
+        margin: 0px 168.5px 0px 167.27px;
+        padding: 80px 0px 0px 0px;
         &__text {
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 20px;
             width: 826px;
             height: 335px;
-            left: 307px;
-            top: 80px;
-            margin: 0 auto;
+            margin: 0px 307px 80px 307px;
             h1{
                 font-weight: 900;
                 font-size: 74px;
@@ -85,13 +85,25 @@
             h4 {
                 margin: 0px 10px;
                 font-style: normal;
-                font-weight: normal;
+                font-weight: 400;
                 font-size: 28px;
-                line-height: 20px;
+                line-height: 40px;
                 text-align: center;
                 letter-spacing: 0.2px;
                 color: #FFFFFF;
+                span {
+                    margin-bottom: 30px;
+                    font-weight: 400;
+                    font-size: 28px;
+                    line-height: 40px;
+                    text-align: center;
+                    letter-spacing: 0.2px;
+                    color: #FFFFFF; 
+                }
             }
         }
+        .hamburger {
+            display: none;
+        }    
     }
 }

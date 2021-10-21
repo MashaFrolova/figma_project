@@ -4,8 +4,12 @@ Theme Name: figma_project
 @import 'libs/fonts';
 @import 'base/variables';
 
+// section {
+//     min-width: 1777px;
+//     margin: 0 auto;
+// }
 .container {
-    max-width: 1777px;
+    width: 1777px;
     margin: 0 auto;
 }
 * {
@@ -15,6 +19,7 @@ Theme Name: figma_project
 @import 'blocks/promo';
 @import 'blocks/buttons';
 @import 'blocks/features';
+@import 'blocks/video';
 @import 'blocks/macbook';
 @import 'blocks/partners';
 @import 'blocks/testimonials';
@@ -22,3 +27,7 @@ Theme Name: figma_project
 @import 'blocks/contacts';
 @import 'blocks/footer';
 @import 'blocks/subscribe';
+@import 'blocks/media/media576';
+@import 'blocks/media/media768';
+@import 'blocks/media/media992';
+@import 'blocks/media/media1200';

@@ -1,18 +1,20 @@
 .testimonials {
+    position: relative;
+    height: 810px;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 810px;
-    width: 1439px; 
-    margin: 0px 169px 80px 169px;
-    .container {
-        height: 811px;
-        background: #FFFFFF;
-    }
+    margin: 0 auto;
+    padding: 100px 0px;
+    background: #FFFFFF;
     &__text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 301px;
         height: 75px;
-        margin: 100px 569px 80px 569px;
+        margin: 0 auto;
         h2 {
             font-weight: 400;
             font-size: 48px;
@@ -20,6 +22,7 @@
             text-align: center;
             letter-spacing: 0.2px;
             color: $second-color;
+            margin: 0 auto;
         }
     }
     &__row {
@@ -27,11 +30,11 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 0px;
         width: 987px;
         height: 315px;
-        margin: 80px 226px 80px 226px;
-        h2 {
+        margin: 0 auto;
+        padding: 0px;
+        h4 {
             font-weight: normal;
             font-size: 28px;
             line-height: 40px;
@@ -39,47 +42,57 @@
             letter-spacing: 0.2px;
             color: $third-color;
         }
-    }
-    &__logo {
-        width: 149.85px;
-        height: 60px;
-        margin: 0 auto;
-    }
-    &__client {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 0px;
-        margin: 50px 400.5px 0px 400.5px;
-        &_avatar {
-            width: 50px;
-            height: 50px;
-            margin: 0px 13px;
+        &_logo {
+            width: 149.85px;
+            height: 60px;
+            margin: 0 auto;
         }
-        &_text {
+        &_client {
             display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            width: 123px;
-            height: 55px;
-            h6 {
-                width: 100%;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 23px;
-                letter-spacing: 0.1px;
-                color: $third-color;
-                padding: 2px 0px;
-                margin: 0px 10px;
+            flex-direction: row;
+            align-items: center;
+            padding: 0px;
+            margin: 50px 400.5px 0px 400.5px;
+            &_avatar {
+                width: 50px;
+                height: 50px;
+                margin: 0px 13px;
             }
-            p {
-                font-weight: 400;
-                font-size: 15px;
-                line-height: 28px;
-                letter-spacing: 0.2px;
-                color: $second-color;
-                margin: 0px 10px;
+            &_text {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 123px;
+                height: 55px;
+                h6 {
+                    width: 100%;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 23px;
+                    letter-spacing: 0.1px;
+                    color: $third-color;
+                    padding: 2px 0px;
+                    margin: 0px 10px;
+                }
+                p {
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 28px;
+                    letter-spacing: 0.2px;
+                    color: $second-color;
+                    margin: 0px 10px;
+                }
             }
         }
+    }
+    &__button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 987px;
+        height: 240px;
+        margin: 0 auto;
+        padding: 0px;
     }
 }
