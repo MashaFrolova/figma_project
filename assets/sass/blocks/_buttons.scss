@@ -19,21 +19,21 @@
         padding: 20px;        
         margin: 90px 602px 378px 602px;
     }
-    &_play {
-        position: relative;
-        width: 187.4px;
-        height: 187.4px;   
-        border-radius: 100%;
-        top: 235.3px; 
-        img {
-            position: absolute;
-            display: block;
-            width: 46.85px;
-            height: 46.85px;
-            left: calc(50% - 46.85px/2 + 5.42px);
-            top: calc(50% - 46.85px/2 + 0.87px);
-        }          
-    }
+    // &_play {
+    //     position: relative;
+    //     width: 187.4px;
+    //     height: 187.4px;   
+    //     border-radius: 100%;
+    //     top: 235.3px; 
+    //     img {
+    //         position: absolute;
+    //         display: block;
+    //         width: 46.85px;
+    //         height: 46.85px;
+    //         left: calc(50% - 46.85px/2 + 5.42px);
+    //         top: calc(50% - 46.85px/2 + 0.87px);
+    //     }          
+    // }
     &_macbook {
         margin-top: 60px;
         font-weight: 900;

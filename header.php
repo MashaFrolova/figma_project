@@ -16,8 +16,7 @@
 <body>
     <section class="promo">
         <div class="container">            
-            <header>
-                
+            <header>                
                 <nav class="menu-main">
                     <?php 
                         wp_nav_menu( [
@@ -54,7 +53,7 @@
                     <div class="hamburger__span">
                         <span class="long"></span>
                         <span class="middle"></span>
-                         <span class="short"></span>
+                        <span class="short"></span>
                     </div> 
                 </div>          
             </header>
@@ -63,6 +62,7 @@
                     <h1><?php the_field('home_title',2); ?></h1>
                     <h4><?php the_field('home_descr'); ?></h4>
                 </div>
+            <div>
             <div>
                 <button class="button button_promo">Try For Free</button>
             </div>                

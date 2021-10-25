@@ -14,30 +14,30 @@ Template Name: About
                     <img src="<?php echo bloginfo ('template_url');?>/assets/img/newsletter.png" alt="newsletter">
                 </div>
                 <div class="subscribe__wrapper_content">
-                    <div class="subscribe__wrapper_content_text">
                         <h3>At your fingertips</h3>
                         <h2>Lightning fast <br>prototyping </h2>
-                    </div>
-                    <div class="subscribe__wrapper_content_form">
-                        <h3>
-                            Subscribe to our Newsletter
-                        </h3>
-                        <p>
-                            Available exclusivery on Figmaland
-                        </p>
-                        <div>
-                            <!-- <?php echo do_shortcode( '[contact-form-7 id="294" title="Subscribe_form"]' ); ?> -->
-                            <form action="#">
-                                <input name="email" required placeholder="Your Email" type="email"> 
-                                <button class="button button_subscribe">Subscribe</button>
-                            </form> 
-                        </div> 
-                    </div>
+                        <h4>Most calendars are designed for teams.<br> 
+                        Slate is designed for freelancers</h4>
+                </div>
+                <div class="subscribe__wrapper_form">
+                    <h3>
+                        Subscribe to our Newsletter
+                    </h3>
+                    <p>
+                        Available exclusivery on Figmaland
+                    </p>
+                    <div>
+                        <!-- <?php echo do_shortcode( '[contact-form-7 id="294" title="Subscribe_form"]' ); ?> -->
+                        <form action="#">
+                            <input name="email" required placeholder="Your Email" type="email"> 
+                            <button class="button button_subscribe">Subscribe</button>
+                        </form> 
+                    </div> 
                 </div>
             </div>
         </div>
     </section>
-    <section class="partners">
+    <!-- <section class="partners">
         <div class="container">
             <div class="partners__text">
                 <h2 style="<?php
@@ -154,7 +154,7 @@ Template Name: About
                 <button class="button button_testimonials">More Testimonials</button>
             </div>
         </div>
-    </div>
+    </div> -->
 
 <?php
     get_footer();

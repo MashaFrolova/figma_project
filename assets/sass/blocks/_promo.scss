@@ -33,10 +33,9 @@
                 font-size: 15px;
                 line-height: 28px;
                 text-decoration: none;
-                    color: #ffff;  
-                    &:last-child {
-                        margin-right: none;
-                    }
+                color: #ffff;  
+                &:last-child {
+                    margin-right: none;
                 }                           
             }
         }
@@ -59,7 +58,11 @@
                 margin-right: 24px;
             }
         }
-        .content {
+        .hamburger {
+            display: none;
+        } 
+    }
+    .content {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -101,9 +104,6 @@
                     color: #FFFFFF; 
                 }
             }
-        }
-        .hamburger {
-            display: none;
-        }    
+        }   
     }
 }

@@ -1,55 +1,65 @@
 @media (max-width: 576px){
-    section{
-        max-width: 576px;        
-        padding: 0px 10px;
+    body{
+        overflow-x: hidden;
     }
-    .promo .container {
-        width: 418px;
-        height: 863px;
+    .container {
+        width: 100%;       
+        // padding: 0px 10px;
+        margin: 0 auto;
+    }
+    .promo {
+        position: relative;
+        height: 100vh;
         margin: 0 auto;        
         background: url('./assets/img/bg_mobile.jpg') center center/cover no-repeat;
+        padding-bottom: 200px;
         header {
+            position: relative;
             display: flex;
+            flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            width: 100%;
+            width: 418px;
             height: 112px;
             top: 1px;
             margin: 0;
-            nav{
-                width: 70%;
+            nav {
+                position: relative;
+                display: block;
+                width: 50%;
                 height: 100vh;
                 margin: 0;
             }      
-            .header__menu {    
+            ul { 
+                position: fixed;   
+                display: flex;
                 flex-direction: column;
-		        justify-content: center;
-		        align-items: flex-start;
+                justify-content: center;
+                align-items: center;
+                top: 0;
+                right: -100%;
+                width: 50%;
+                height: 100vh;
                 padding: 20px 15px;
-		        background-color: rgba(0,0,0, .8);             
-                &_link {
-                    padding-right: 0px;
-                    margin-bottom: 10px;
-                    font-weight: 400;
-                    font-size: 15px;
-                    line-height: 25px;
+		        background-color: rgba(0,0,0, .8);
+		        transition: 0.6s all;
+                &_active{ 
+			        left: 0;
+                }       
+                li { 
+                    line-height: 28px;                          
                 }
-            }
-            .header__logo {
-                display: block;
-                width: 206px;
-                height: 78px;
-                margin: 27px 150px 27px 26px;
-            }
-            .header__social {
-                display: none;
             }
             .hamburger {
                 position: absolute;
                 display: block;
                 width: 40px;
                 height: 32px;
-                margin: 40px 16px 40px 0px;
+                top: 40px;
+                right: 16px;
+                bottom: 40px;
+                left: 240px;
+                margin: 0;
                 padding: 8px 6px 8px 6.67px;
                 cursor: pointer;
                 border: 1px solid #000000;
@@ -81,7 +91,7 @@
                     height: 2px;
                 }
                 &_active { 
-                    span{ 
+                    .hamburger__span{ 
                         margin-bottom: -2px; 
                         &:nth-child(1){
                             transform: translateY(3px) rotate(-45deg);
@@ -96,26 +106,38 @@
                     }
                 }
             } 
+            .header__logo {
+                position: absolute;
+                display: block;
+                width: 98px;
+                height: 58px;
+                top: 16px;
+                left: 27px;
+                margin: 0;
+            }
+            .header__social {
+                display: none;
+            }  
         }
         .content {
-            width: 378px;
-            height: 690px;
-            margin: 30px 20px;
-            padding: 50px 0px;
+            max-width: 100%;
+            height: 100vh;
+            padding: 0;
+            margin: 30px 0px 0px 0px;
             &__text {
-                width: 353px;
-                height: 292px;
-                margin: 0px 12.5px 59px 12.5px;
+                width: 200px;
+                height: 250px;
+                margin: 0;
+                padding: 50px;
                 h1{
-                    margin: 10px;
                     font-weight: 400;
-                    font-size: 48px;
-                    line-height: 55px;
+                    font-size: 30px;
+                    line-height: 40px;
                 }
                 h4 {
-                    margin: 7px 34px 0px 34px;
-                    font-size: 28px;
-                    line-height: 40px;
+                    margin: 7px 14px 0px 14px;
+                    font-size: 20px;
+                    line-height: 30px;
                     span {
                         display: none;
                     }
@@ -123,13 +145,19 @@
             }
         }
         .button_promo{
-            width: 236px;
-            height: 52px;
-            margin: 0px 91px 267px 91px;
+            position: absolute;
+            display: block;
+            width: 136px;
+            height: 40px;
+            right: 91px;
+            bottom: 167px;
+            left: 91px;
+            margin: 0 auto;
+            padding: 0;        
         } 
     }
-    .features.container {   
-        width: 418px;
+    .features {   
+        width: 100%;
         height: 1596.12px;
         min-width: 100%;
         max-height: 1362.3px;
@@ -243,6 +271,6 @@
         }
     }
     footer {
-        max-width: 418px;
+        width: 100%;
     }
 }

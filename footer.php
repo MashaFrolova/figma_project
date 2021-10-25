@@ -1,4 +1,4 @@
-<footer class="footer">
+<!-- <footer class="footer">
     <div class="container">
         <div class="footer__wrapper">
             <div class="footer__menu">
@@ -66,12 +66,13 @@
             </div>
         </div>
     </div>
-</footer>
+</footer> -->
 <?php
     wp_footer();
 ?>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDo8LmKnzQb6PFLjbCiE24Q5dBtVztpA9o"></script> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="Scripts/VideoScript.js"></script>
     <script type="text/javascript">
    
     (function($) { -->

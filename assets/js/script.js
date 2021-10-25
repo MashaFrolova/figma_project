@@ -10,8 +10,8 @@
 jQuery(document).foundation();
 
 window.addEventListener('DOMContentLoaded', () => {
-    const menu = document.querySelector('.menu'),
-    menuItem = document.querySelectorAll('.menu_item'),
+    const menu = document.querySelector('..promo header ul'),
+    menuItem = document.querySelectorAll('.promo header ul li'),
     hamburger = document.querySelector('.hamburger');
 
     hamburger.addEventListener('click', () => {
@@ -23,9 +23,33 @@ window.addEventListener('DOMContentLoaded', () => {
         item.addEventListener('click', () => {
             hamburger.classList.toggle('hamburger_active');
             menu.classList.toggle('menu_active');
-        })
-    })
-});
+        });
+    });
+})
+    
+    
+window.addEventListener ('DOMContentLoaded',handleWindowLoad) 
+    function handleWindowLoad ()
+    {
+        const Video = document.getElementById ( ".video" );
+        const PlayButton = document.getElementById ( ".playpause" );
+            
+        PlayButton.addEventListener ( "click", Play_Pause_Video ) ;
+    
+        function Play_Pause_Video ()
+        {
+            if (Video.paused === true)
+            {
+                Video.play();
+                PlayButton.innerHTML = "Pause";
+            }
+            else
+            {
+                Video.pause();
+                PlayButton.innerHTML = "Play";
+            }
+        }
+    }
 
 function validateForms(form){
     $(form).validate({
@@ -57,4 +81,3 @@ function validateForms(form){
 validateForms('#contacts__left_form');
 
 $('input[name=phone]').mask("+7 (999) 999-99-99");
-});
