@@ -37,7 +37,7 @@ Template Name: About
             </div>
         </div>
     </section>
-    <!-- <section class="partners">
+    <section class="partners">
         <div class="container">
             <div class="partners__text">
                 <h2 style="<?php
@@ -104,7 +104,7 @@ Template Name: About
             <button class="button button_partners">Try For Free</button>
         </div>
     </section>               
-    <div class="testimonials">
+    <!-- <section class="testimonials">
         <div class="container">
             <div class="testimonials__text">
                 <h2 style="<?php
@@ -154,7 +154,7 @@ Template Name: About
                 <button class="button button_testimonials">More Testimonials</button>
             </div>
         </div>
-    </div> -->
+    </section> -->
 
 <?php
     get_footer();
