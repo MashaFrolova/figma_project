@@ -1,6 +1,4 @@
 .testimonials {
-    position: relative;
-    height: 810px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,7 +6,7 @@
     margin: 0 auto;
     padding: 100px 0px;
     background: #FFFFFF;
-    &__text{
+    &__h2{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -29,18 +27,21 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
         width: 987px;
         height: 315px;
         margin: 0 auto;
         padding: 0px;
-        h4 {
-            font-weight: normal;
-            font-size: 28px;
-            line-height: 40px;
-            text-align: center;
-            letter-spacing: 0.2px;
-            color: $third-color;
+        &_text{
+            width: 987px;
+            min-height: 100px;
+            h4 {
+                font-weight: normal;
+                font-size: 28px;
+                line-height: 40px;
+                text-align: center;
+                letter-spacing: 0.2px;
+                color: $third-color;
+            }
         }
         &_logo {
             width: 149.85px;
@@ -66,7 +67,7 @@
                 height: 55px;
                 h6 {
                     width: 100%;
-                    font-weight: 400;
+                    font-weight: 700;
                     font-size: 16px;
                     line-height: 23px;
                     letter-spacing: 0.1px;

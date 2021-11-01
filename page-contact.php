@@ -15,7 +15,7 @@ Template Name: Contact
                     <h2>Contact Us</h2>
                     <h4>Most calendars are designed for teams. 
                         <br> 
-                    Slate is designed for freelancers</h4>
+                    <span>Slate is designed for freelancers</span></h4>
                 </div>
                 <div class="contacts__content__wrapper">
                     <div class="contacts__content__wrapper_left">

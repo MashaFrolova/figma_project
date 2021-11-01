@@ -14,10 +14,17 @@ Template Name: About
                     <img src="<?php echo bloginfo ('template_url');?>/assets/img/newsletter.png" alt="newsletter">
                 </div>
                 <div class="subscribe__wrapper_content">
-                        <h3>At your fingertips</h3>
+                    <div>
+                        <h3>At your fingertips </h3>
+                    </div>
+                    <span>Newsletter</span>
+                     <div>
                         <h2>Lightning fast <br>prototyping </h2>
+                     </div> 
+                     <div>
                         <h4>Most calendars are designed for teams.<br> 
                         Slate is designed for freelancers</h4>
+                     </div>             
                 </div>
                 <div class="subscribe__wrapper_form">
                     <h3>
@@ -52,7 +59,7 @@ Template Name: About
                 <h4><?php the_field('partners_descr'); ?></h4>
             </div>
             <div class="partners__items">
-                <div class="partners__row">
+                <div class="partners__items__row">
                     <?php 
                         $posts = get_posts( array(
                         'numberposts' => -1,
@@ -66,7 +73,7 @@ Template Name: About
                             foreach( $posts as $post ){
                                 setup_postdata($post);
                                 ?>
-                                    <div class="partners__row_item">
+                                    <div class="partners__items__row_item">
                                         <h6><?php the_field('partners_title'); ?></h6>
                                         <img src="<?php the_field('partners_icon'); ?>">
                                     </div>
@@ -76,7 +83,7 @@ Template Name: About
                         wp_reset_postdata(); // сброс
                     ?>
                 </div>    
-                <div class="partners__row_2">
+                <div class="partners__items__row_2">
                     <?php 
                         $posts = get_posts( array(
                         'numberposts' => -1,
@@ -90,8 +97,8 @@ Template Name: About
                             foreach( $posts as $post ){
                                 setup_postdata($post);
                                 ?>
-                                <div class="partners__row_2_item">
-                                    <h6><?php the_field('partners_title '); ?></h6>
+                                <div class="partners__items__row_2_item">
+                                    <h6><?php the_field('partners_title'); ?></h6>
                                     <img src="<?php the_field('partners_icon'); ?>">
                                 </div>
                             <?php
@@ -101,12 +108,14 @@ Template Name: About
                     ?>
                 </div>
             </div>
-            <button class="button button_partners">Try For Free</button>
+            <div class="partners__button">
+                <button class="button button_partners">Try For Free</button>
+            </div>
         </div>
     </section>               
-    <!-- <section class="testimonials">
+    <section class="testimonials">
         <div class="container">
-            <div class="testimonials__text">
+            <div class="testimonials__h2">
                 <h2 style="<?php
                                 $field = get_field('color_title');
                                 if ($field == 'white') {
@@ -120,7 +129,9 @@ Template Name: About
                 <div class="testimonials__row_logo">
                     <img src="<?php the_field('testimonials_icon'); ?>">
                 </div>
-                <h4><?php the_field('testimonials_descr'); ?></h4>
+                <div class="testimonials__row_text">
+                    <h4><?php the_field('testimonials_descr'); ?></h4>
+                </div>                
                 <div class="testimonials__row_client">
 
                     <?php 
@@ -154,7 +165,7 @@ Template Name: About
                 <button class="button button_testimonials">More Testimonials</button>
             </div>
         </div>
-    </section> -->
+    </section>
 
 <?php
     get_footer();
