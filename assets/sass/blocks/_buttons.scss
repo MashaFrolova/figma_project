@@ -15,25 +15,10 @@
         background-image: linear-gradient(to top, $main-color 0%, #4ce2ff 100%);
 		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
     }
-    &_promo { 
+    &_promo {
         padding: 20px;        
-        margin: 90px 602px 378px 602px;
+        margin: 80px 602px 378px 602px;
     }
-    // &_play {
-    //     position: relative;
-    //     width: 187.4px;
-    //     height: 187.4px;   
-    //     border-radius: 100%;
-    //     top: 235.3px; 
-    //     img {
-    //         position: absolute;
-    //         display: block;
-    //         width: 46.85px;
-    //         height: 46.85px;
-    //         left: calc(50% - 46.85px/2 + 5.42px);
-    //         top: calc(50% - 46.85px/2 + 0.87px);
-    //     }          
-    // }
     &_macbook {
         margin-top: 60px;
         font-weight: 900;

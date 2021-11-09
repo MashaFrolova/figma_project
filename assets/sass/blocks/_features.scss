@@ -1,9 +1,12 @@
 .features {
+    width: 100%;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 1362.3px;
     margin: 0 auto;
+    margin-bottom: 0;
     &__wrapper {
         display: flex;
         flex-direction: column;   
@@ -92,15 +95,17 @@
             align-items: center;
             width: 1058.19px;  
             height: 762.3px;
-            margin: 0px 359.4px;
+            margin: 0 auto;
             padding: 52px 0px;
             background: #FFFFFF;
+            bottom: 80px;
             order: 0;
             flex-grow: 0;
             &_video {
                 position: relative;
-                height: 658.3px;               
                 width: 100%;
+                height: auto;
+                max-height: 100%;
                 left: -59.57px;
                 top: 52px;
                 order: 0;

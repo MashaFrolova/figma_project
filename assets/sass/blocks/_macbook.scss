@@ -2,9 +2,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 558px;
+    height: 924px;
     background: #FFFFFF;
     margin: 0 auto;
+    padding: 146px 82px 226px 82px;
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -12,7 +13,7 @@
         padding: 43px 0px;
         width: 1243.3px;
         height: 472px;
-        margin: 266px 266.85px;
+        margin: 0 auto;
         &_content {
             display: flex;
             flex-direction: column;
@@ -21,7 +22,6 @@
             height: 357px;
             top: 57.5px;
             left: 50px;
-            // margin: 57.5px 50px 57.5px 0px;
             h2 {
                 font-weight: 400;
                 font-size: 48px;
@@ -29,6 +29,7 @@
                 letter-spacing: 0.2px;
                 color: $second-color;
                 margin-bottom: 17px;
+                margin-top: 0;
             }
             h4 {
                 font-weight: 400;
@@ -51,7 +52,7 @@
                 width: 646.07px;
                 height: 370.77px;
                 left: 7.61px;
-                top: 7.61px;
+                top: 11px;
             }
         }
     }

@@ -17,10 +17,15 @@ Template Name: About
                     <div>
                         <h3>At your fingertips </h3>
                     </div>
-                    <span>Newsletter</span>
-                     <div>
-                        <h2>Lightning fast <br>prototyping </h2>
-                     </div> 
+                    <div class="desktop">
+                        <h2>
+                            Lightning fast <br>prototyping
+                        </h2>
+                    </div> 
+                    <div class="mobile">
+                        <h2>Newsletter</h2>
+                    </div>
+                    
                      <div>
                         <h4>Most calendars are designed for teams.<br> 
                         Slate is designed for freelancers</h4>

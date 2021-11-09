@@ -1,13 +1,17 @@
 .footer {
-    height: 567px;
+    width: 100%;
+    min-height: 567px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0px;
     background-color: $second-color;
+    margin: 0 auto;
+    margin-bottom: 0;
     &__wrapper {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         margin: 0 auto;
         width: 991px;
         height: 267px;
@@ -17,6 +21,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        align-content: center;
         width: 582px;
         height: 267px;
         margin: 0;
@@ -28,7 +33,7 @@
             height: 267px;
             margin: 0px 20px 0px 0px;
             h3 {
-                font-weight: 700;
+                font-weight: 900;
                 font-size: 20px;
                 line-height: 28px;
                 letter-spacing: 0.1px;
@@ -70,7 +75,7 @@
             height: 267px;
             margin: 0px 20px 0px 0px;
             h3 {
-                font-weight: 700;
+                font-weight: 900;
                 font-size: 20px;
                 line-height: 28px;
                 letter-spacing: 0.1px;
@@ -110,7 +115,7 @@
             height: 267px;
             margin: 0;
             h3 {
-                font-weight: 700;
+                font-weight: 900;
                 font-size: 20px;
                 line-height: 28px;
                 letter-spacing: 0.1px;
@@ -118,7 +123,7 @@
                 margin: 0px 80px 10px 0px;
             }
             nav {
-                width: 127px;
+                width: 128px;
                 height: 204px;
                 margin: 15px 59px 0px 0px;
                 ul {

@@ -4,8 +4,12 @@ Theme Name: figma_project
 @import 'libs/fonts';
 @import 'base/variables';
 
+body {
+    min-width: 100%;   
+    margin: 0;
+  }
 .container {
-    width: 1777px;
+    width: 1777px;   
     margin: 0 auto;
 }
 * {

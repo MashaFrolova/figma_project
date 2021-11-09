@@ -30,16 +30,22 @@
             height: 500px;
             left: 1017.23px;
             top: 190px;
-            order: 1;
+            order: 0;
             align-self: center;
             flex-grow: 0;
-            h2 {
+            h2{
                 font-weight: 400;
                 font-size: 48px;
                 line-height: 55px;
+                text-align: start;
                 letter-spacing: 0.2px;
                 color: $second-color;
-                margin: 17px 0px 25px 0px;
+            }
+            .desktop{
+                margin: 7px 0px 25px 0px;
+            }
+            .mobile{                        
+                display: none;
             }
             h3 {
                 font-weight: 900;
@@ -48,10 +54,7 @@
                 letter-spacing: 0.1px;
                 color: $second-color;
                 margin: 0;
-            }  
-            span {
-                display: none;
-            }
+            }             
             h4 {
                 display: none;
             }      
