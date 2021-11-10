@@ -101,7 +101,7 @@
             bottom: 80px;
             order: 0;
             flex-grow: 0;
-            &_video {
+            &_desktop {
                 position: relative;
                 width: 100%;
                 height: auto;
@@ -109,6 +109,9 @@
                 left: -59.57px;
                 top: 52px;
                 order: 0;
+            }
+            &_mobile {
+                display: none;
             }
             &_playpause {
                 position:absolute;

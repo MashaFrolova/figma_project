@@ -49,8 +49,12 @@
                     ?>
                 </div>
                 <div class="features__wrapper__video">
-                    <video class="features__wrapper__video_video" 
-                    poster="<?php echo bloginfo ('template_url');?>/assets/img/screen.jpg" 
+                    <video class="features__wrapper__video_desktop" 
+                    poster="<?php echo bloginfo ('template_url');?>/assets/img/screen.jpg"
+                    preload="none">
+                        <source src="#" type="video/mp4">  
+                    </video>
+                    <video class="features__wrapper__video_mobile" 
                     poster="<?php echo bloginfo ('template_url');?>/assets/img/mobile/screen_mobile.jpg" media="(max-width: 768px)"
                     preload="none">
                         <source src="#" type="video/mp4">  

@@ -73,7 +73,10 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDo8LmKnzQb6PFLjbCiE24Q5dBtVztpA9o"></script> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="Scripts/VideoScript.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     <script type="text/javascript">
+    <script src="script.js"></script>
    
     (function($) { -->
 

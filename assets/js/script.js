@@ -7,12 +7,13 @@
  
 //= include stickybar.js
  
-jQuery(document).foundation();
+// jQuery(document).foundation();
 
 window.addEventListener('DOMContentLoaded', () => {
-    const menu = document.querySelector('..promo header ul'),
-    menuItem = document.querySelectorAll('.promo header ul li'),
+    const menu = document.querySelector('header__menu_link'),
+    menuItem = document.querySelectorAll('li'),
     hamburger = document.querySelector('.hamburger');
+    closeElem = document.querySelector('header__menu_link__close');
 
     hamburger.addEventListener('click', () => {
         hamburger.classList.toggle('hamburger_active');
@@ -24,6 +25,10 @@ window.addEventListener('DOMContentLoaded', () => {
             hamburger.classList.toggle('hamburger_active');
             menu.classList.toggle('menu_active');
         });
+    });
+
+    closeElem.addEventListener('click', () => {
+        menu.classList.remove('active');
     });
 })
     
