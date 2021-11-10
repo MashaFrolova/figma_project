@@ -10,10 +10,9 @@
 // jQuery(document).foundation();
 
 window.addEventListener('DOMContentLoaded', () => {
-    const menu = document.querySelector('header__menu_link'),
+    const menu = document.querySelector('.header__menu_link'),
     menuItem = document.querySelectorAll('li'),
     hamburger = document.querySelector('.hamburger');
-    closeElem = document.querySelector('header__menu_link__close');
 
     hamburger.addEventListener('click', () => {
         hamburger.classList.toggle('hamburger_active');
@@ -22,39 +21,41 @@ window.addEventListener('DOMContentLoaded', () => {
 
     menuItem.forEach(item => {
         item.addEventListener('click', () => {
+    
             hamburger.classList.toggle('hamburger_active');
             menu.classList.toggle('menu_active');
+            this
         });
     });
 
-    closeElem.addEventListener('click', () => {
-        menu.classList.remove('active');
-    });
+    // closeElem.addEventListener('click', () => {
+    //     menu.classList.remove('active');
+    // });
 })
     
     
-window.addEventListener ('DOMContentLoaded',handleWindowLoad) 
-    function handleWindowLoad ()
-    {
-        const Video = document.getElementById ( ".video" );
-        const PlayButton = document.getElementById ( ".playpause" );
+// window.addEventListener ('DOMContentLoaded',handleWindowLoad) 
+//     function handleWindowLoad ()
+//     {
+//         const Video = document.getElementById ( ".video" );
+//         const PlayButton = document.getElementById ( ".playpause" );
             
-        PlayButton.addEventListener ( "click", Play_Pause_Video ) ;
+//         PlayButton.addEventListener ( "click", Play_Pause_Video ) ;
     
-        function Play_Pause_Video ()
-        {
-            if (Video.paused === true)
-            {
-                Video.play();
-                PlayButton.innerHTML = "Pause";
-            }
-            else
-            {
-                Video.pause();
-                PlayButton.innerHTML = "Play";
-            }
-        }
-    }
+//         function Play_Pause_Video ()
+//         {
+//             if (Video.paused === true)
+//             {
+//                 Video.play();
+//                 PlayButton.innerHTML = "Pause";
+//             }
+//             else
+//             {
+//                 Video.pause();
+//                 PlayButton.innerHTML = "Play";
+//             }
+//         }
+//     }
 
 function validateForms(form){
     $(form).validate({

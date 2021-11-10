@@ -183,9 +183,9 @@ body {
     background-image: linear-gradient(to top, #2091F9 0%, #4ce2ff 100%);
     text-shadow: -1px 1px 0 rgba(0, 0, 0, 0.21); }
   .button_promo {
-    position: absolute;
     padding: 20px;
-    margin: 80px 602px 378px 602px;
+    margin: 0 auto;
+    margin-top: 80px;
     right: 0;
     left: 0; }
   .button_macbook {
@@ -1458,37 +1458,46 @@ body {
       margin: 0 auto; }
       .promo header nav {
         display: block;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         width: 50%;
         height: 100vh;
         margin: 0 auto; }
-      .promo header ul {
+      .promo header .header__menu_link {
         position: fixed;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        left: -100%;
         right: 0;
         margin-top: 0;
-        width: 50%;
-        height: 100%;
-        padding: 80px 15px;
+        height: 100vh;
+        left: 0px;
+        top: 0px;
+        bottom: 0px;
+        width: 270px;
+        padding: 0;
+        margin-bottom: 0px;
         background-color: rgba(0, 0, 0, 0.8);
         transition: 0.6s all;
         z-index: 3; }
-        .promo header ul_active {
-          right: 0; }
-        .promo header ul li {
+        .promo header .header__menu_link li {
           margin: 0 auto;
           margin-bottom: 50px;
           padding: 0; }
-          .promo header ul li:last-child {
+          .promo header .header__menu_link li:last-child {
             margin-right: 0; }
-          .promo header ul li a {
+          .promo header .header__menu_link li a {
             font-weight: 400;
             font-size: 28px;
             line-height: 30px; }
+      .promo header .header__menu_link menu_active {
+        right: 0;
+        visibility: visible; }
+      .promo header .header__menu_link__close {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer; }
       .promo header .hamburger {
         display: block;
         position: absolute;
@@ -1522,15 +1531,19 @@ body {
           background-color: #FFFFFF;
           width: 16.67px;
           height: 2px; }
-        .promo header .hamburger_active .hamburger__span {
-          margin-bottom: -2px; }
-          .promo header .hamburger_active .hamburger__span:nth-child(1) {
+        .promo header .hamburger_active {
+          height: 40px;
+          border: none; }
+          .promo header .hamburger_active span {
+            margin-bottom: -2px; }
+          .promo header .hamburger_active span.long {
+            width: 40px;
             transform: translateY(3px) rotate(45deg); }
-          .promo header .hamburger_active .hamburger__span:nth-child(2) {
+          .promo header .hamburger_active span.middle {
             display: none; }
-          .promo header .hamburger_active .hamburger__span:nth-child(3) {
-            width: 26.67px;
-            transform: translateY(3px) rotate(-45deg); }
+          .promo header .hamburger_active span.short {
+            width: 40px;
+            transform: translateY(-12px) rotate(-45deg); }
       .promo header .header__logo {
         position: absolute;
         display: block;
@@ -1566,10 +1579,10 @@ body {
       .promo__subheader span {
         display: none; }
     .promo .button_promo {
+      position: absolute;
       display: block;
       width: 236px;
       height: 52px;
-      left: 91px;
       bottom: 267px;
       margin: 0 auto;
       padding: 0; }
@@ -1655,12 +1668,7 @@ body {
         top: 56.68px;
         background: #FFFFFF; }
         .features__wrapper__video_video {
-          position: relative;
-          width: 385.89px;
-          height: 215.77px;
-          right: 0px;
-          top: 6.68px;
-          border-radius: 26.705px; }
+          display: none; }
         .features__wrapper__video_mobile {
           position: relative;
           width: 385.89px;
@@ -2446,7 +2454,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 540px;
+    min-width: 100%;
     min-height: 1430.99px;
     top: 0;
     padding: 0px;
