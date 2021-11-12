@@ -1,29 +1,33 @@
+  .container{
+        min-width: 540px;
+    }
 .features {
-    width: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 1362.3px;
-    margin: 0 auto;
+    min-height: 1362.3px;
     margin-bottom: 0;
+    padding: 0;
     &__wrapper {
         display: flex;
         flex-direction: column;   
         align-items: center;
-        width: 1777px;
+        max-width: 1777px;
         height: 1361.3px;
         margin: 0 auto;
+        margin-bottom: 0;
+        padding: 0;
         &__text {
             display: flex;
             flex-direction: column;
             align-items: center;
             width: 552px;
             height: 182px;
-            margin: 0px 612.5px 80px 612.5px;
+            margin: 0 auto;
             order: 0;
             flex-grow: 0;
-            h2 {
+            .header {
                 top: 91px;
                 padding-bottom: 7px;
                 font-weight: 400;
@@ -33,7 +37,8 @@
                 letter-spacing: 0.2px;  
                 color: $second-color;
             }
-            h4 {
+            .subheader {
+                display: inline-block;
                 margin: 10px;
                 font-weight: normal;
                 font-size: 28px;
@@ -41,6 +46,16 @@
                 text-align: center;
                 letter-spacing: 0.2px;
                 color: $third-color; 
+                span{
+                    display: inline-block;
+                    margin: 10px;
+                    font-weight: normal;
+                    font-size: 28px;
+                    line-height: 40px;
+                    text-align: center;
+                    letter-spacing: 0.2px;
+                    color: $third-color; 
+                }
             }
         }
         &__items{
@@ -102,13 +117,13 @@
             order: 0;
             flex-grow: 0;
             &_desktop {
+                display: block;
                 position: relative;
                 width: 100%;
                 height: auto;
-                max-height: 100%;
-                left: -59.57px;
-                top: 52px;
+                max-height: 100%;;
                 order: 0;
+                margin: 0 auto;
             }
             &_mobile {
                 display: none;
@@ -122,9 +137,9 @@
                 border: 1px solid $main-color;
                 border-radius: 100%;                
                 cursor: pointer;
-                left: 435.07px;
-                top: 287.3px;
-                bottom: 289.6px;
+                margin: 0 auto;
+                top: 50%;
+		        transform: translateY(-50%);
                 &:hover {
                     background-image: linear-gradient(to top, $main-color 0%, #4ce2ff 100%);
                     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);

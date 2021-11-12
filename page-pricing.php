@@ -11,7 +11,7 @@
     <section class="pricing">
         <div class="container">
             <div class="pricing__text">
-                <h2 style="<?php
+                <h2 class="header" style="<?php
                                 $field = get_field('color_title');
                                 if ($field == 'white') {
                                 ?>
@@ -19,7 +19,7 @@
                                 <?php
                                 }
                             ?>"><?php the_field('pricing_title'); ?></h2>
-                <h4><?php the_field('pricing_descr'); ?></h4>
+                <h4 class="subheader"><?php the_field('pricing_descr'); ?></h4>
             </div>
             <div class="pricing__items">
                 <?php 

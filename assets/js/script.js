@@ -73,9 +73,10 @@ function validateForms(form){
         messages: {
             name: {
                 required: "Пожалуйста, введите свое имя",
-                minlength: jQuery.validator.format("Введите {0} символа!")
-              },
-            phone: "Пожалуйста, введите свой номер телефона",
+            },
+            phone: {
+                required:"Пожалуйста, введите свой номер телефона",
+            },
             email: {
               required: "Пожалуйста, введите свою почту",
               email: "Неправильно введен адрес почты"

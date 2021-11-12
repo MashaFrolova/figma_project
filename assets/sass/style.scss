@@ -4,18 +4,15 @@ Theme Name: figma_project
 @import 'libs/fonts';
 @import 'base/variables';
 
-body {
-    min-width: 100%;   
-    margin: 0;
-  }
-.container {
-    width: 1777px;   
+section {
+    width: 100%;
+}
+.container{
     margin: 0 auto;
 }
 * {
     font-family: 'Graphik', sans-serif;
 }
-
 
 @import 'blocks/promo';
 @import 'blocks/buttons';
@@ -27,7 +24,12 @@ body {
 @import 'blocks/contacts';
 @import 'blocks/footer';
 @import 'blocks/subscribe';
-@import 'blocks/media/media576';
-@import 'blocks/media/media768';
-@import 'blocks/media/media992';
-@import 'blocks/media/media1200';
+@import 'blocks/media/768/promo768';
+@import 'blocks/media/768/features768';
+@import 'blocks/media/768/macbook768';
+@import 'blocks/media/768/pricing768';
+@import 'blocks/media/768/subscribe768';
+@import 'blocks/media/768/partners768';
+@import 'blocks/media/768/testimonials768';
+@import 'blocks/media/768/contacts768';
+@import 'blocks/media/768/footer768';

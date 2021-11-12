@@ -1,0 +1,137 @@
+@media (max-width: 768px){
+    .subscribe {        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 1104.49px;
+        margin: 0 auto;
+        padding: 80px 0px;
+        margin-bottom: 0;
+        &__wrapper{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 418px;
+            height: 943.49px;
+            padding: 0px;
+            margin: 0;
+            &_content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 552px;
+                max-height: 217px;
+                left: 0px;
+                top: 0;
+                bottom: 0;
+                order: 1;
+                flex-grow: 0;
+                margin: 0 auto;
+                margin-top: 0;
+                h3 {
+                    text-align: center;
+                    margin-bottom: 27px;
+                    margin: 0 auto;
+                }
+                h2{
+                    font-weight: 400;
+                    font-size: 48px;
+                    line-height: 55px;
+                    text-align: center;
+                    letter-spacing: 0.2px;
+                    color: $second-color;
+                    margin: 0 auto;
+                }
+                .desktop{
+                    display: none;
+    
+                }
+                .mobile{                        
+                    margin-bottom: 7px;
+                    margin: 0 auto;
+                    display: inline-block;
+                }
+                h4{
+                    font-weight: 400;
+                    font-size: 28px;
+                    line-height: 40px;
+                    text-align: center;
+                    color: #374754;
+                    width: 552px;
+                    height: 100px;
+                    margin: 0 auto;
+                    margin-bottom: 0;
+                }
+            }
+            &_picture {
+                display: block;
+                position: absolute;
+                width: 371px;
+                height: 347.49px;
+                padding: 20px;         
+                order: 1;
+                flex-grow: 0;
+                margin: 0 auto;
+                margin-top: 59px;
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 347.49px;
+                    left: 23.5px;
+                    top: 0px;
+                    margin: 0 auto;
+                }
+            }
+            &_form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 373px;
+                height: 261px;
+                left: 22.5px;
+                top: 762.49px;
+                margin: 0 auto;
+                margin-bottom: 0;
+                h3 {
+                    margin: 0 auto;
+                }
+                p {
+                    margin: 0 auto;
+                }
+                div {   
+                    display: flex;
+                    flex-direction: column; 
+                    align-items: center;           
+                    width: 353px;
+                    height: 168px;
+                    left: 10px;
+                    top: 83px;
+                    margin: 0 auto;
+                    form {
+                        display: flex;
+                        flex-direction: column; 
+                        align-items: center;  
+                        width: 353px;
+                        height: 168px;
+                    }
+                    input {
+                        width: 353px;
+                        height: 54px;
+                        left: 0px;
+                        top: 24px;
+                        padding: 19px 255px 19px 35px;
+                        margin: 24px 0px 12px 0px;
+                    }
+                    button.button_subscribe {
+                        display: block;
+                        width: 353px;
+                        height: 54px;
+                        left: 0px;
+                        margin: 0px 0px 24px 0px;
+                    }
+                }     
+            }
+        }
+    }
+}

@@ -1,12 +1,13 @@
+.container{
+    width: 1770px;
+}
 .footer {
-    width: 100%;
     min-height: 567px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0px;
     background-color: $second-color;
-    margin: 0 auto;
     margin-bottom: 0;
     &__wrapper {
         display: flex;
@@ -15,7 +16,7 @@
         margin: 0 auto;
         width: 991px;
         height: 267px;
-        margin: 150px 393px 150px 393px;
+        margin: 0 auto;
     }
     &__menu {
         display: flex;

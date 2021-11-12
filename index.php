@@ -5,7 +5,7 @@
         <div class="container">            
             <div class="features__wrapper">
                 <div class="features__wrapper__text">
-                    <h2 class=" header" style="<?php
+                    <h2 class="header" style="<?php
                                     $field = get_field('color_title');
                                     if ($field == 'white') {
                                     ?>
@@ -69,19 +69,6 @@
                
         </div>
     </section>
-    <!-- <section class="video">
-        <div class="container">
-            <div class="video__wrapper">
-                <video class="video__wrapper_video" poster="<?php echo bloginfo ('template_url');?>/assets/img/screen.jpg" preload="none">
-                    <source src="#" type="video/mp4">  
-                </video>
-                <div class="playpause">
-                        <button class="playpause_button"><img src="<?php echo bloginfo ('template_url');?>/assets/img/icons/Vector.png" alt="vector"></button>
-                </div>   
-            </div>   
-        </div>  
-    </section> -->
-    
 <?php
     get_footer();
 ?>

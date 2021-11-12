@@ -1,0 +1,100 @@
+@media (max-width: 768px){ 
+    .partners {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        min-height: 1060.14px;
+        margin: 0 auto;
+        margin-top: 0;
+        &__text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px;
+            width: 418px;
+            height: 182px;
+            top: 4413.61px;
+            margin: 0 auto;
+            margin-bottom: 80px;
+            h2 {
+                margin: 0 auto;
+            }
+            h4 {
+                margin-top: 17px;
+                margin-bottom: 10px;
+            }
+        }
+        &__items {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            width: 275px;
+            height: 558.14px;
+            margin: 0 auto;            
+            &__row {
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                align-content: center;            
+                align-items: center;
+                padding: 18px;
+                width: 100%;
+                height: 100%;
+                top: 0px;
+                margin: 0 auto;
+                :nth-child(2){
+                    order:3;
+                }
+                :nth-last-child(3){
+                    display: none;
+                }      
+                &_item {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    align-content: center;
+                    align-items: center;
+                    padding-left: 40px;
+                    padding-right: 40px;
+                    width: 273px;
+                    height: 151px;
+                    left: 1px;
+                    top: 18px;
+                    margin-bottom: 30px;
+                    h6{
+                        margin-bottom: 15px;
+                    }
+                    img {
+                        display: inline-block;
+                        position: absolute;
+                        text-align: center;
+                        margin: 0 auto;
+                        bottom: 25px;
+                    }
+                }
+            }
+            &__row_2 {
+                display: none;
+            }
+        }
+        &__button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 236px;
+            height: 190px;
+            padding: 0px;
+            button.button_partners{
+                height: 60px;
+                width: 236px;
+                font-weight: 900;
+                // margin: 80px 71px 50px 71px;
+                margin: 0 auto;
+            }
+        }
+    } 
+}

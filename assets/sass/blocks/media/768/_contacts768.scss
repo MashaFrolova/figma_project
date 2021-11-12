@@ -1,0 +1,131 @@
+@media (max-width: 768px){
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 1568.99px;
+        margin-bottom: 0px;
+        padding: 99px 0px 0px 0px;
+        margin: 0 auto;
+        bottom: 0;
+        &__content{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 358px;
+            height: 1369.99px;
+            margin: 0px 30px;
+            padding: 50px 0px;
+            &__text {
+                width: 285px;
+                height: 182px;
+                padding: 10px;
+                padding: 0;
+                margin: 0 auto;
+                margin-bottom: 50px;
+                h2{
+                    margin-bottom: 17px;
+                }                
+                h4 {
+                    margin: 10px;
+                }
+                span{
+                    display: none;
+                }
+            }
+            &__wrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0px;
+                width: 358px;
+                height: 100%;
+                margin: 0 auto;
+                &_left {
+                    width: 378px;
+                    height: 669px;
+                    margin: 0 auto;
+                    margin-bottom: 0;
+                    order: 2;
+                    h3 {
+                        margin: 0 auto;
+                    }
+                    .form {
+                        padding: 52px 49px;
+                        margin: 0 auto;
+                        margin-bottom: 50px;
+                        width: 378px;
+                        height: 669px;
+                        order: 4;
+                        input {
+                            width: 280px;
+                            height: 54px;
+                        }
+                    }
+                }
+                &_right {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 0px;
+                    width: 349px;
+                    height: 100%;
+                    margin-left: 0px;
+                    margin-bottom: 0px;
+                    &_items {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        padding: 0px;
+                        width: 349px;
+                        height: 208px;
+                        margin: 0 auto;
+                        margin-bottom: 50px;
+                        order: 2;
+                        .adress {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            padding: 0px;
+                            h6 {
+                                margin-left: 20px;
+                                text-align: start;
+    
+                            }
+                        }
+                        .phone {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            padding: 0px;
+                            h6 {
+                                margin-left: 20px;
+                            }
+                        }
+                        .mail {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            padding: 0px;
+                            h6 {
+                                margin-left: 20px;
+                            }
+                        }
+                    }
+                    &_map {
+                        display: none;
+                    }
+                    &_social {
+                        width: 190.96px;
+                        height: 60.99px;
+                        margin: 0 auto;
+                        margin-bottom: 50px;
+                        order: 1;
+                    }
+                }
+            }
+        }
+    } 
+}
+ 

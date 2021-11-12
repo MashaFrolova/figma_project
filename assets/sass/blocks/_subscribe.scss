@@ -1,17 +1,19 @@
+.container{
+    width: 1440px;
+}
 .subscribe {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 725px;
-    margin: 0 auto;
+    min-height: 725px;
     &__wrapper{
         position: relative;
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
         width: 1548.23px;
         height: 638px;
         padding: 43px 0px;
-        margin: 0px 168.5px;
+        margin: 0 auto;
         &_picture {
             position: absolute;
             display: block;
@@ -19,6 +21,7 @@
             height: 532px;
             left: 50px;
             top: 106px;
+            right: 0;
             order: 0;
             align-self: flex-end;
             flex-grow: 0;

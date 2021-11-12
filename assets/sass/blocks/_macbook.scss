@@ -1,11 +1,13 @@
+.container{
+    max-width: 1770px;
+    padding: 0;
+}
 .macbook {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 924px;
-    background: #FFFFFF;
-    margin: 0 auto;
-    padding: 146px 82px 226px 82px;
+    min-height: 924px;
+    background: #FFFFFF;    
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -13,7 +15,7 @@
         padding: 43px 0px;
         width: 1243.3px;
         height: 472px;
-        margin: 0 auto;
+        margin: 226px 82px;
         &_content {
             display: flex;
             flex-direction: column;

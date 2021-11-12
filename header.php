@@ -16,7 +16,7 @@
 <body>
     <section class="promo">
         <header>                
-            <nav class="container">
+            <nav>
                 <?php 
                      wp_nav_menu( [
                                 'menu'            => 'Main', 
@@ -61,8 +61,8 @@
             
                 <div class="promo__wrapper">
                     <div class="promo__text">
-                        <h1 class="promo__header"><?php the_field('home_title',2); ?></h1>
-                        <h4 class="promo__subheader"><?php the_field('home_descr',2); ?></h4>
+                        <h1 class="promo__text_header"><?php the_field('home_title',2); ?></h1>
+                        <h4 class="promo__text_subheader"><?php the_field('home_descr',2); ?></h4>
                     </div>
                     <div>
                         <button class="button button_promo">Try For Free</button>

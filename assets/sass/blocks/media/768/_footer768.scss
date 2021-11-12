@@ -1,0 +1,67 @@
+@media (max-width: 768px){
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 1430.99px;
+        width: max-content;
+        top: 0;
+        padding: 0px;
+        margin: 0 auto;
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 284px;
+            height: 1216.99px;
+            margin: 0 auto;
+            padding-top: 67px;
+        }
+        &__menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 186px;
+            height: 267px;
+            margin: 0 auto;
+            margin-bottom: 73px;
+            &_pages {
+                width: 186px;
+                height: 267px;
+                margin: 0 auto;
+                margin-bottom: 73px;
+            }
+            &_link {
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 28px;
+                letter-spacing: 0.2px;
+                color: #FFFFFF;            
+                text-decoration: none;   
+            }
+            
+            &_tomothy {
+                width: 186px;
+                height: 267px;
+                margin: 0 auto;
+                margin-bottom: 73px;
+            }
+            
+            &_jane {
+                width: 186px;
+                height: 267px;
+                margin: 0 auto;
+                margin-bottom: 76px;
+            }
+        }
+        &__contacts {
+            justify-content: flex-start;
+            width: 284px;
+            height: 193.99px;
+            margin: 0px 67px 107px 67px;
+        }
+        &__social {
+            margin: 0 auto;
+        }
+    }      
+}
