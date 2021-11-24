@@ -1,0 +1,47 @@
+@media (max-width: 576px){
+    .container {
+        width: 100%;
+    }
+    .macbook {
+        padding: 0;
+        &__wrapper {
+            margin: 0;
+            margin-right: 0;
+            &_content {
+                margin: 0;
+                .header {
+                    font-size: 37px;
+                    line-height: 45px;
+                    text-align: center;
+                    margin-bottom: 17px;
+                    margin-right: 50px;
+                }
+                .subheader {
+                    text-align: center;
+                    margin-bottom: 50px;
+                    margin-right: 50px;
+                    span {
+                        display: none;
+                    }
+                }
+                button.button_macbook {
+                    margin-right: 50px;
+                    top: 0px;
+                }
+            }
+            &_screen {
+                width: 100%;
+                margin-right: 50px;
+                bottom: 50px;
+                // margin-bottom: 50px;
+                img {
+                width: 378.95px;
+                height: 211.89px;
+                left: -3.48px;
+                top: 6.56px;
+                // margin: 6.56px 3.48px;
+                }
+            }
+        } 
+    }
+}

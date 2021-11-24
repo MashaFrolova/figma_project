@@ -1,0 +1,139 @@
+@media (max-width: 576px){
+    .container {
+        min-width: 100%;
+    }
+    .footer {       
+        min-height: 100%;
+        margin: 0 auto;
+        &__wrapper {
+            left: 50%;
+            transform: translateX(6%);
+        }
+        &__menu {
+            min-height: 267px;
+            margin-right: 0;
+            &_pages {
+                width: 186px;
+                height: 267px;
+                margin-left: 50px;
+                h3 {
+                    font-weight: 900;
+                    font-size: 20px;
+                    line-height: 28px;
+                    letter-spacing: 0.1px;
+                    color: #FFFFFF;
+                    margin-right: 50px;
+                }
+                nav {
+                    width: 100%;
+                    height: 204px;
+                    margin-left: 50px;
+                    margin-right: 100px;
+                    ul {
+                        padding-left: 0px;
+                        margin-top: 0px;
+                        margin-bottom: 0px;
+                        list-style-type: none;
+                        li {
+                            padding-bottom: 16px;
+                            &:nth-child(5) {
+                                padding-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            &_link {
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 28px;
+                letter-spacing: 0.2px;
+                color: #FFFFFF;            
+                text-decoration: none;   
+            }
+            
+            &_tomothy {
+                width: 186px;
+                height: 267px;
+                margin-right: 50px;
+                h3 {
+                    font-weight: 900;
+                    font-size: 20px;
+                    line-height: 28px;
+                    letter-spacing: 0.1px;
+                    color: #FFFFFF;
+                    margin-right: 50px;
+                }
+                nav {
+                    width: 120px;
+                    height: 204px;
+                    margin-left: 0px;
+                    margin-right: 50px;
+                    ul {
+                        padding-left: 0px;
+                        margin-top: 0px;
+                        margin-bottom: 0px;
+                        list-style-type: none;
+                        li {
+                            font-weight: 400;
+                            font-size: 15px;
+                            line-height: 28px;
+                            letter-spacing: 0.2px;
+                            color: #FFFFFF;                        
+                            text-decoration: none;
+                            padding-bottom: 16px;
+                            &:nth-child(5) {
+                                padding-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            &_jane {
+                min-width: 186px;
+                height: 267px;
+                margin-left: 50px;
+                h3 {
+                    font-weight: 900;
+                    font-size: 20px;
+                    line-height: 28px;
+                    letter-spacing: 0.1px;
+                    color: #FFFFFF;
+                    margin-left: 0;
+                    margin-right: 50px;
+                }
+                nav {
+                    width: 128px;
+                    height: 204px;
+                    margin-left: 50px;
+                    margin-right: 100px;
+                    ul {
+                        padding-left: 0px;
+                        margin-top: 0px;
+                        margin-bottom: 0px;
+                        li {
+                            font-weight: 400;
+                            font-size: 15px;
+                            line-height: 28px;
+                            letter-spacing: 0.2px;
+                            color: #FFFFFF;
+                            list-style-type: none;
+                            padding-bottom: 16px;
+                            &:nth-child(5) {
+                                padding-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &__contacts {
+            width: 100%;
+            bottom: 0;
+        }
+        &__social {
+            margin-left: 30px;;
+        }
+    }      
+}

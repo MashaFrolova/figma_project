@@ -8,11 +8,12 @@
             width: 418px;
             height: 1435.12px;
             padding: 80px 0px;
+            margin-left: 73px;
             &__text {
                 display: block;
                 width: 285px;
                 height: 182px;
-                order: 0;               
+                order: 0;           
                 .header {
                     padding-bottom: 17px;
                     margin: 0 auto;
@@ -24,9 +25,9 @@
                     text-align: center;
                     span {
                         display: none;
-                        margin: 0;
                     }
                 }
+                
             }
             &__items{
                 display: flex;
@@ -79,6 +80,8 @@
                 height: 229.12px;
                 margin: 0 auto;
                 background: #FFFFFF;
+                padding-top: 0px;   
+                padding-bottom: 0px; 
                 &_desktop {
                     display: none;
                 } 
@@ -93,9 +96,6 @@
                 &_playpause { 
                     width: 61.42px;
                     height: 61.42px;
-
-                    // left: calc(50% - 61.42px/2 + 0.06px);
-                    // top: calc(50% - 61.42px/2 + 0.12px);
                     img {
                         width: 15.36px;
                         height: 15.36px;

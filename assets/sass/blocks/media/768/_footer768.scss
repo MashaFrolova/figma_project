@@ -1,12 +1,12 @@
 @media (max-width: 768px){
+    .container {
+        max-width: 540px;
+    }
     .footer {
         display: flex;
         flex-direction: column;
         align-items: center;
         min-height: 1430.99px;
-        width: max-content;
-        top: 0;
-        padding: 0px;
         margin: 0 auto;
         &__wrapper {
             display: flex;
@@ -21,17 +21,19 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 186px;
-            height: 267px;
-            margin: 0 auto;
+            width: 100%;
+            min-height: 267px;
+            margin-right: 49px;
             margin-bottom: 73px;
             &_pages {
                 width: 186px;
                 height: 267px;
                 margin: 0 auto;
                 margin-bottom: 73px;
+                text-align: center;
             }
             &_link {
+                text-align: center;
                 font-weight: 400;
                 font-size: 15px;
                 line-height: 28px;
@@ -45,6 +47,9 @@
                 height: 267px;
                 margin: 0 auto;
                 margin-bottom: 73px;
+                li{
+                    text-align: center;
+                }
             }
             
             &_jane {
@@ -52,6 +57,9 @@
                 height: 267px;
                 margin: 0 auto;
                 margin-bottom: 76px;
+                li{
+                    text-align: center;
+                }
             }
         }
         &__contacts {

@@ -11,8 +11,8 @@ Template Name: Product
         <div class="container">
             <div class="macbook__wrapper">
                 <div class="macbook__wrapper_content">
-                    <h2><?php the_field('macbook_title'); ?></h2>
-                    <h4><?php the_field('macbook_descr'); ?></h4>
+                    <h2 class="header" ><?php the_field('macbook_title'); ?></h2>
+                    <h4 class="subheader" ><?php the_field('macbook_descr'); ?></h4>
                     <div>
                         <button class="button button_macbook">Try For Free</button>
                     </div>

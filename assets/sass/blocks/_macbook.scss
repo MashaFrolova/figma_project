@@ -1,13 +1,14 @@
 .container{
-    max-width: 1770px;
-    padding: 0;
+    width: 1770px;
 }
 .macbook {
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 924px;
-    background: #FFFFFF;    
+    background: #FFFFFF; 
+    padding: 226px 82px;   
+    margin-bottom: 0;
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -15,7 +16,7 @@
         padding: 43px 0px;
         width: 1243.3px;
         height: 472px;
-        margin: 226px 82px;
+        margin: 0 auto;
         &_content {
             display: flex;
             flex-direction: column;
@@ -24,7 +25,7 @@
             height: 357px;
             top: 57.5px;
             left: 50px;
-            h2 {
+            .header {
                 font-weight: 400;
                 font-size: 48px;
                 line-height: 55px;
@@ -33,7 +34,7 @@
                 margin-bottom: 17px;
                 margin-top: 0;
             }
-            h4 {
+            .subheader {
                 font-weight: 400;
                 font-size: 28px;
                 line-height: 40px;

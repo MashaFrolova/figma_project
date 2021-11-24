@@ -18,7 +18,7 @@
         height: 222px;
         margin: 0 auto;
         margin-bottom: 80px;
-        h2 {
+        .header {
             font-weight: 400;
             font-size: 48px;
             line-height: 55px;
@@ -26,7 +26,7 @@
             letter-spacing: 0.2px;  
             color: $second-color;
         }
-        h4 {
+        .subheader{
             margin-top: 17px;
             font-weight: 400;
             font-size: 28px;

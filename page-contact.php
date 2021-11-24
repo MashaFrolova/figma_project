@@ -20,7 +20,7 @@ Template Name: Contact
                 <div class="contacts__content__wrapper">
                     <div class="contacts__content__wrapper_left">
                         <h3>Contact Us</h3>
-                        <div class="form">
+                        <div>
                             <?php echo do_shortcode( '[contact-form-7 id="117" title="Contact_form"]' ); ?>
                         </div>
                     </div>

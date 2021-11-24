@@ -35,7 +35,6 @@
     "plugins": [],
     "map": false
   },
-  
   "scripts": {
     "watch": "node-sass ./assets/sass/style.scss -o ./ --source-map true --output-style expanded --indent-type tab --indent-width 1 -w",
     "compile:css": "node-sass ./assets/sass/style.scss -o ./ && stylelint '*.css' --fix || true && stylelint '*.css' --fix",
@@ -43,5 +42,8 @@
     "lint:scss": "wp-scripts lint-style 'sass/**/*.scss'",
     "lint:js": "wp-scripts lint-js 'js/*.js'",
     "bundle": "dir-archiver --src . --dest ../_s.zip --exclude .DS_Store .stylelintrc.json .eslintrc .git .gitattributes .github .gitignore README.md composer.json composer.lock node_modules vendor package-lock.json package.json .travis.yml phpcs.xml.dist sass style.css.map"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
   }
 }

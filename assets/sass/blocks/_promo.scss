@@ -1,13 +1,18 @@
+.container{
+    width: 1777px;
+}
 .promo{
     min-height: 1045px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background: url('./assets/img/main_bg.jpg') center center/cover no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
     margin-bottom: 80px;  
     header {
         display: flex;
-        flex-direction: row;
+        // flex-direction: row;
         justify-content: space-between;
         width: 1210px;
         height: 156px;
@@ -66,46 +71,46 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 1440px;
+        width: 100%;
         height: 885px;
         margin: 0 auto;
-        padding-top: 80px;
-    }
-    &__text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 826px;
-        height: 335px;
-        margin: 0 auto;
-        margin-bottom: 50px;
-        padding: 20px 0px;
-        &_header{
-            font-weight: 900;
-            font-size: 74px;
-            line-height: 84px;
-            text-align: center;
-            letter-spacing: 0.2px;
-            color: #FFFFFF;
-        }
-        &_subheader{
-            margin: 0px 10px 20px 0px;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 28px;
-            line-height: 40px;
-            text-align: center;
-            letter-spacing: 0.2px;
-            color: #FFFFFF;
-            span {
-                margin-bottom: 30px;
+        margin-top: 80px;
+        &__text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 826px;
+            height: 335px;
+            margin: 0 auto;
+            margin-bottom: 50px;
+            padding: 20px 0px;
+            &_header{
+                font-weight: 900;
+                font-size: 74px;
+                line-height: 84px;
+                text-align: center;
+                letter-spacing: 0.2px;
+                color: #FFFFFF;
+            }
+            &_subheader{
+                margin: 0px 10px 20px 0px;
+                font-style: normal;
                 font-weight: 400;
                 font-size: 28px;
                 line-height: 40px;
                 text-align: center;
                 letter-spacing: 0.2px;
-                color: #FFFFFF; 
-            }    
+                color: #FFFFFF;
+                span {
+                    margin-bottom: 30px;
+                    font-weight: 400;
+                    font-size: 28px;
+                    line-height: 40px;
+                    text-align: center;
+                    letter-spacing: 0.2px;
+                    color: #FFFFFF; 
+                }    
+            }  
         }  
-    }    
+    }  
 }

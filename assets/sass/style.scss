@@ -3,10 +3,21 @@ Theme Name: figma_project
 */
 @import 'libs/fonts';
 @import 'base/variables';
-
-section {
+html{
     width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
+
+body{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+// section {
+//     width: 100%;
+// }
 .container{
     margin: 0 auto;
 }
@@ -33,3 +44,12 @@ section {
 @import 'blocks/media/768/testimonials768';
 @import 'blocks/media/768/contacts768';
 @import 'blocks/media/768/footer768';
+@import 'blocks/media/576/promo576';
+@import 'blocks/media/576/features576';
+@import 'blocks/media/576/macbook576';
+@import 'blocks/media/576/pricing576';
+@import 'blocks/media/576/subscribe576';
+@import 'blocks/media/576/partners576';
+@import 'blocks/media/576/testimonials576';
+@import 'blocks/media/576/contacts576';
+@import 'blocks/media/576/footer576';

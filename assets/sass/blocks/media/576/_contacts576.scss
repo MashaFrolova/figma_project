@@ -1,0 +1,92 @@
+@media (max-width: 576px){
+    .container {
+        width: 100%;
+    }
+    .contacts {
+        margin: 0;
+        &__content{
+            padding: 0;
+            &__text {
+                margin: 0;
+                padding: 0;
+                right: 50%;
+                transform: translateX(-6%);
+                h2{
+                    font-size: 44px;
+                    line-height: 53px;
+                    margin-bottom: 17px;
+                }               
+            }
+            &__wrapper {            
+                margin: 0;
+                &_left {
+                    margin:0;
+                    padding: 0;
+                    h3 {
+                        margin: 0 auto;
+                    }
+                    input {
+                        width: 76%;
+                        right: 50%;
+                        transform: translateX(-9%);
+                        textarea {
+                            width: 78%;
+                            right: 50%;
+                            transform: translateX(7%);
+                            margin-bottom: 80px;
+                        }
+                    }
+                }
+                &_right {
+                    margin-top: 50px;
+                    margin-right: 0;
+                    margin-left: 0;
+                    padding-bottom: 50px;
+                    &_items {
+                        padding: 0;
+                        margin-bottom: 100px;
+                        .adress {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            padding: 0px;
+                            h6 {
+                                margin-left: 20px;
+                                text-align: start;
+    
+                            }
+                        }
+                        .phone {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            padding: 0px;
+                            h6 {
+                                margin-left: 20px;
+                            }
+                        }
+                        .mail {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            padding: 0px;
+                            h6 {
+                                margin-left: 20px;
+                            }
+                        }
+                    }
+                    &_map {
+                        display: none;
+                    }
+                    &_social {
+                       margin: 0;
+                       right: 50%;
+                       transform: translateX(21%);
+                    }
+                }
+            }
+            
+        }
+        
+    } 
+}

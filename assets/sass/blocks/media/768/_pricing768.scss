@@ -3,13 +3,10 @@
         max-width: 540px;
     }
     .pricing {
-        padding: 0px 28px;
+        padding: 0;
         min-height: 2430px;
-        width: max-content;
-        margin: 0 auto;
         margin-top: 10px;
         &__text {
-            padding: 0px;
             width: 285px;
             height: 182px;
             margin: 0 auto;
@@ -36,299 +33,31 @@
         } 
         &__white {    
             width: 100%;
-            height: 607px;
-            left: 0px;
-            top: 0px;
-            margin: 18px 13.5px 50px 13.5px;
-            &_text {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                padding: 0px;
-                width: 148px;
-                height: 80px;
-                margin: 0px 93.5px 30px 93.5px;
-                h3 {
-                    font-weight: 900;
-                    font-size: 20px;
-                    line-height: 28px;
-                    letter-spacing: 0.1px;
-                    color: $second-color;
-                    margin: 0px 10px;
-                }
-                h6 {
-                    font-weight: 400;
-                    font-size: 16px;
-                    line-height: 23px;
-                    text-align: center;
-                    letter-spacing: 0.1px;
-                    color: #374754;
-                    margin: 0px 0px;
-                }
-            }
-            &_price {
-                display: flex;
-                flex-direction: row;
-                align-items: flex-start;
-                padding: 0px;
-                width: 153px;
-                height: 61px;
-                margin: 0px 91px 0px 91px;
-                .title {
-                    width: 75px;
-                    height: 104px;
-                    margin: 0px 0px;
-                }
-                h1 {
-                    width: 100%;
-                    padding: 0px 10px;
-                    font-weight: 900;
-                    font-size: 74px;
-                    line-height: 63px;
-                    letter-spacing: 0.2px;
-                    color: $second-color;
-                    margin: 0px 10px;
-                }
-                .block {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    padding: 0px;
-                    width: 78px;
-                    height: 51px;
-                    margin: 0px 0px;
-                }
-                h3 {
-                    font-weight: 700;
-                    font-size: 20px;
-                    line-height: 28px;
-                    letter-spacing: 0.1px;
-                    color: $second-color;
-                    margin: 0px 10px;
-                }
-                h6 {
-                    width: 100%;
-                    font-weight: 400;
-                    font-size: 16px;
-                    line-height: 23px;
-                    letter-spacing: 0.1px;
-                    color: $third-color;
-                    margin: 0px 10px;
-                }
-            }
-            &_list {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                padding: 0px;
-                width: 255px;
-                height: 240px;
-                margin: 30px 0px 30px 0px;
-                list-style-type: none;
-                font-weight: 400;
-                font-size: 15px;
-                line-height: 48px;
-                letter-spacing: 0.2px;
-                color: $second-color;
-                margin: 0px 10px;
-            }
+            margin: 0 auto;
+            margin-top: 18px;        
         }
         &__blue {
-            padding: 83px 40px;
+            padding: 40px 40px;
             width: 100%;
             height: 607px;
-            height: 693px;
-            bottom: 0px;
-            margin: 0px 13.5px 50px 13.5px;
-            &_text {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                padding: 0px;
-                width: 148px;
-                height: 80px;
-                margin: 0px 93.5px 30px 93.5px;
-                h3 {
-                    font-weight: 900;
-                    font-size: 20px;
-                    line-height: 28px;
-                    letter-spacing: 0.1px;
-                    color: #FFFFFF;
-                    margin: 0px 10px;
-                }
-                h6 {
-                    font-weight: 400;
-                    font-size: 16px;
-                    line-height: 23px;
-                    text-align: center;
-                    letter-spacing: 0.1px;
-                    color: #FFFFFF;
-                    margin: 0px 0px;
-                }
-            }
-            &_price {
-                display: flex;
-                flex-direction: row;
-                align-items: flex-start;
-                padding: 0px;
-                width: 186px;
-                height: 61px;
-                margin: 0px 74.5px 30px 74.5px;
-                .title {
-                    width: 108px;
-                    height: 104px;
-                    margin: 0px 0px;
-                }
-                h1 {
-                    width: 100%;
-                    padding: 0px 10px;
-                    font-weight: 900;
-                    font-size: 74px;
-                    line-height: 63px;
-                    letter-spacing: 0.2px;
-                    color: #FFFFFF;
-                    margin: 0px 10px;
-                }
-                .block {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    padding: 0px;
-                    width: 78px;
-                    height: 51px;
-                    margin: 0px 0px;
-                }
-                h3 {
-                    font-weight: 700;
-                    font-size: 20px;
-                    line-height: 28px;
-                    letter-spacing: 0.1px;
-                    color: #FFFFFF;
-                    margin: 0px 10px;
-                }
-                h6 {
-                    width: 100%;
-                    font-weight: 400;
-                    font-size: 16px;
-                    line-height: 23px;
-                    letter-spacing: 0.1px;
-                    color: #FFFFFF;
-                    margin: 0px 10px;
-                }
-            }
-            &_list {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                padding: 0px;
-                width: 255px;
-                height: 240px;
-                margin: 0px 0px 30px 0px;
-                list-style-type: none;
-                font-weight: 400;
-                font-size: 15px;
-                line-height: 48px;
-                letter-spacing: 0.2px;
-                color: $second-color;
-                margin: 0px 10px;
-            }
+            margin: 0 auto;
+            margin-bottom: 50px;
         }
         &__white_2 {
             width: 100%;
             height: 607px;
-            bottom: 0px;
-            margin: 0px 13.5px 18px 13.5px;
-            &_text_2 {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                padding: 0px;
-                width: 148px;
-                height: 80px;
-                margin: 40px 93.5px 30px 93.5px;
-                h3 {
-                    font-weight: 900;
-                    font-size: 20px;
-                    line-height: 28px;
-                    letter-spacing: 0.1px;
-                    color: $second-color;
+            margin: 0;
+            margin-bottom: 18px;
+            &_price{
+                margin-right: 0;
+                margin-left: 0;
+                h1{
                     margin: 0px 10px;
                 }
-                h6 {
-                    font-weight: 400;
-                    font-size: 16px;
-                    line-height: 23px;
-                    text-align: center;
-                    letter-spacing: 0.1px;
-                    color: #374754;
-                    margin: 0px 0px; 
-                }
-            } 
-            &_price_2 {
-                display: flex;
-                flex-direction: row;
-                align-items: flex-start;
-                padding: 0px;
-                width: 198px;
-                height: 61px;
-                margin: 0px 68.5px 0px 68.5px;
-                .title {
-                    width: 120px;
-                    height: 104px;
-                }
-                h1 {
-                    width: 100%;
-                    padding: 0px 10px;
-                    font-weight: 900;
-                    font-size: 74px;
-                    line-height: 63px;
-                    letter-spacing: 0.2px;
-                    color: $second-color;
-                    margin: 0px 10px;
-                }
-                .block {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    padding: 0px;
-                    width: 78px;
-                    height: 51px;
-                    margin: 0px 0px;
-                }
-                h3 {
-                    font-weight: 700;
-                    font-size: 20px;
-                    line-height: 28px;
-                    letter-spacing: 0.1px;
-                    color: $second-color;
-                    margin: 0px 10px;
-                }
-                h6 {
-                    width: 100%;
-                    font-weight: 400;
-                    font-size: 16px;
-                    line-height: 23px;
-                    letter-spacing: 0.1px;
-                    color: $third-color;
-                    margin: 0px 10px;
-                }
-            }
-            &_list_2 {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                padding: 0px;
-                width: 255px;
-                height: 240px;
-                margin: 30px 0px 30px 0px;
-                list-style-type: none;
-                font-weight: 400;
-                font-size: 15px;
-                line-height: 48px;
-                letter-spacing: 0.2px;
-                color: $second-color;
-                margin: 0px 10px;    
             }
         }
+    }
+    .button_pricing{
+        margin: 30px 101px 0px 101px;
     }
 }

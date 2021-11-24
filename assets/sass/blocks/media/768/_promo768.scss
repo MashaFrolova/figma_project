@@ -5,7 +5,6 @@
     .promo {    
         position: relative; 
         min-height: 863px;
-        width: max-content;
         background: url('./assets/img/mobile/bg_mobile.jpg') center center/cover no-repeat;
         background-size: 100% 100%;
         header {
@@ -64,6 +63,7 @@
                 cursor: pointer;
             }      
             .hamburger {
+                align-self: flex-end;
                 display: block;
                 position: absolute;                
                 top: 40px;
@@ -120,6 +120,7 @@
                 }
             } 
             .header__logo {
+                align-self: flex-start;
                 position: absolute;
                 display: block;
                 width: 206px;
@@ -136,31 +137,33 @@
             width: 378px;
             height: 750px;
             padding: 30px 0px;
-        }
-        &__text{
-            width: 353px;
-            height: 292px;
-            padding: 50px 10px;
-            margin-bottom: 0px;
-            &_header{
-                font-weight: 400;
-                font-size: 48px;
-                line-height: 70px;
-                margin-bottom: 17px;
-            }
-            &_subheader{
-                margin: 0 auto;
-                margin-bottom: 10px;
-                font-size: 28px;
-                line-height: 40px;
-                span {
-                    display: none;
+            &__text{
+                width: 353px;
+                height: 292px;
+                padding: 50px 10px;
+                margin-left: 73px;
+                margin-bottom: 0px;
+                &_header{
+                    font-weight: 400;
+                    font-size: 48px;
+                    line-height: 70px;
+                    margin-bottom: 17px;   
                 }
-            }
-        }  
+                &_subheader{
+                    margin: 0 auto;
+                    margin-bottom: 10px;
+                    font-size: 28px;
+                    line-height: 40px;
+                    span {
+                        display: none;
+                    }
+                }
+            }  
+        }
         .button_promo{
             padding: 0;
-            margin-top: 59px;                  
+            margin-top: 59px; 
+            margin-left: 73px;                 
         } 
     }
 }

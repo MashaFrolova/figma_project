@@ -13,9 +13,9 @@
                                     <?php
                                     }
                                 ?>
-                        "><?php the_field ('features_title'); ?>
+                        "><?php the_field ('features_title', 2); ?>
                     </h2>
-                    <h4 class="subheader"><?php the_field('features_descr'); ?></h4>
+                    <h4 class="subheader"><?php the_field('features_descr', 2); ?></h4>
                 </div>   
                 <div class="features__wrapper__items">
                     <?php 

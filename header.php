@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title><?php bloginfo('name'); echo " | "; bloginfo('description'); ?></title>
     <link rel="shortcut icon" href="<?php echo bloginfo ('template_url');?>/assets/img/icons/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <!-- <link rel="stylesheet" href="assets/css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="assets/sass/libs/_fonts.scss">
     <link rel="stylesheet" href="/css/style.min.css"> -->
+
+    
     <?php
         wp_head();
     ?>
@@ -60,13 +63,11 @@
             <div class="container">        
             
                 <div class="promo__wrapper">
-                    <div class="promo__text">
-                        <h1 class="promo__text_header"><?php the_field('home_title',2); ?></h1>
-                        <h4 class="promo__text_subheader"><?php the_field('home_descr',2); ?></h4>
+                    <div class="promo__wrapper__text">
+                        <h1 class="promo__wrapper__text_header"><?php the_field('home_title',2); ?></h1>
+                        <h4 class="promo__wrapper__text_subheader"><?php the_field('home_descr',2); ?></h4>
                     </div>
-                    <div>
-                        <button class="button button_promo">Try For Free</button>
-                    </div>
+                    <button class="button button_promo">Try For Free</button>
                 </div>     
                 
             </div>

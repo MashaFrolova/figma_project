@@ -1,4 +1,7 @@
 @media (max-width: 768px){
+    .container{
+        max-width: 540px;
+    }
     .testimonials {
         position: relative;
         display: flex;

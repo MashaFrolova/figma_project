@@ -8,7 +8,6 @@
     max-height: 1155px;
     background-color: $second-color;
     padding: 100px 0px;
-    margin: 0 auto;
     margin-bottom: 0;
     &__text {
         display: flex;
@@ -296,7 +295,7 @@
                 text-align: center;
                 letter-spacing: 0.1px;
                 color: #374754;
-                margin: 0px 0px; 
+                margin: 0; 
             }
         } 
         &_price_2 {

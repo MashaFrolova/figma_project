@@ -1,4 +1,7 @@
 @media (max-width: 768px){ 
+    .container{
+        max-width: 540px;
+    }
     .partners {
         display: flex;
         flex-direction: column;
@@ -8,19 +11,13 @@
         margin: 0 auto;
         margin-top: 0;
         &__text {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 0px;
             width: 418px;
             height: 182px;
-            top: 4413.61px;
-            margin: 0 auto;
-            margin-bottom: 80px;
-            h2 {
+            .header {
                 margin: 0 auto;
             }
-            h4 {
+            .subheader{
+                font-size: 21px;
                 margin-top: 17px;
                 margin-bottom: 10px;
             }
