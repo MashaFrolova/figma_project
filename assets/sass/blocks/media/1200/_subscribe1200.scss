@@ -1,0 +1,70 @@
+@media (max-width: 1200px){
+    .container{
+        max-width: 960px;
+    }
+    .subscribe {
+        min-height: 100%;
+        &__wrapper{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100%;
+            width: 100%;
+            padding: 0;
+            margin: 0 auto;
+            margin-bottom: 200px;
+            &_picture {
+                align-self: center;
+                width: 85%;
+                margin: 0 auto;
+                margin-top: 106px;
+                order: 1;
+            }
+            &_content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-self: center;
+                width: 544px;
+                height: 500px; 
+                order: 0; 
+                margin: 0 auto;
+                &_text{                
+                    align-self: center;
+                    text-align: center;
+                    margin-right: 20px;
+                    h2{
+                        margin: 0 auto;
+                        font-size: 60px;
+                        text-align: center;
+                        br {
+                            display: none;
+                        }
+                    }
+                    .desktop{
+                        min-width: 960px;
+                        text-align: center;
+                        margin: 0 auto;
+                        margin-top: 7px;
+                        margin-bottom: 25px;
+                    }
+                    h3 {
+                        font-size: 24px;
+                    }             
+                    h4 {
+                        display: none;
+                    } 
+                }            
+                &_form {
+                    align-self: center;
+                    h3 {
+                        margin-left: 100px;
+                    }
+                    p {
+                        margin-left: 87px;
+                    }
+                }     
+            }
+        }
+    }
+}

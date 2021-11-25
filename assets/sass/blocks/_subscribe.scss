@@ -8,14 +8,15 @@
     min-height: 725px;
     &__wrapper{
         display: flex;
-        justify-content: space-between;
+        align-items:flex-start;
+        align-self:flex-start;
         width: 1548.23px;
         height: 638px;
         padding: 43px 0px;
         margin: 0 auto;
         &_picture {
             align-self: flex-end;
-            width: 854.23px;
+            width: 684.23px;
             height: 532px;
             margin: 106px 0px 0px 50px;            
             flex-grow: 0;
@@ -24,16 +25,18 @@
         &_content {
             display: flex;
             flex-direction: column;
-            align-items:flex-start;
+            justify-content:flex-start;
+            align-self:flex-start;
             width: 544px;
             height: 500px;  
+            order: 0;
             &_text{
                 padding: 0px;                
-                align-self: center;
+                align-self:flex-start;
                 flex-grow: 0;
                 order: 0;
-                left: 50%;
-                transform: translateX(-100%);
+                margin: 0 auto;
+                margin-left: 0;
                 h2{
                     font-weight: 400;
                     font-size: 48px;
@@ -65,8 +68,9 @@
                 width: 477px;
                 height: 199px;
                 margin: 15px 0px 0px 0px;
-                left: 50%;
-                transform: translateX(-41%);
+                order:1;
+                margin: 0 auto;
+                margin-left: 0px;
                 h3 {
                     font-weight: 900;
                     font-size: 20px;
@@ -92,7 +96,7 @@
                     width: 457px;
                     height: 126px;
                     left: 1017.23px;
-                    margin: 0px 10px 10px 10px;
+                    margin: 0px 10px 10px 0px;
                     form {
                         display: flex;
                         flex-direction: row; 

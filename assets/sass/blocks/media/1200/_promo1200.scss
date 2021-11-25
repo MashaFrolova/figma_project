@@ -1,0 +1,43 @@
+@media (max-width: 1200px){
+    .container{
+        max-width: 960px;
+    }
+    .promo{
+        overflow: auto;
+        header {
+            width: 100%;
+
+            nav {
+                margin-left: 40px;
+            }      
+            ul {    
+                padding: 0px;            
+                li {
+                    font-size: 17px;
+                    line-height: 32px;                          
+                }
+            }
+            .header__logo {
+                margin-right: 0px;
+            }
+            .header__social {
+                margin-right: 40px;
+                a {
+
+                    margin-right: 20px;
+                }
+            }
+            .hamburger {
+                display: none;
+            } 
+        } 
+        .subheader{               
+            font-size: 31px;
+            line-height: 51px;  
+        }  
+        .button_promo {
+            margin-left: 50px;
+            margin-top: 80px;
+        }
+    }
+}

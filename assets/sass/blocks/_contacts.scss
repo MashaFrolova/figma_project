@@ -16,7 +16,8 @@
         align-items: center;
         width: 1228px;
         height: 1001px;
-        margin: 0px 106px 52px 106px;
+        margin: 0 auto;
+        margin-bottom: 52px;
         padding-bottom: 50px;
         &__text {
             display: flex;
@@ -25,7 +26,8 @@
             padding: 10px;
             width: 552px;
             min-height: 182px;
-            margin: 50px 0px;
+            margin: 0 auto;
+            margin-right: 360px;
             h2{
                 font-weight: 400;
                 font-size: 48px;

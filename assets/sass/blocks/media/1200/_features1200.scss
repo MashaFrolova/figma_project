@@ -1,0 +1,13 @@
+@media (max-width: 1200px){
+    .container{
+        max-width: 960px;
+    }
+    .features {
+        &__wrapper {
+            margin-left: 50px;
+            &__video {
+                width: 100%;  
+            }
+        }
+    }
+}
