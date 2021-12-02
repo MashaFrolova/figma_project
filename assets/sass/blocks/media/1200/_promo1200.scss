@@ -1,14 +1,14 @@
-@media (max-width: 1200px){
+@media (max-width:1200px){
     .container{
-        max-width: 960px;
+        width: 1199px;
     }
     .promo{
-        overflow: auto;
         header {
             width: 100%;
 
             nav {
                 margin-left: 40px;
+                margin-top: 50px;
             }      
             ul {    
                 padding: 0px;            
@@ -30,14 +30,20 @@
             .hamburger {
                 display: none;
             } 
+        }
+        &__wrapper {
+            &__text {
+                margin-left: 185px;
+            }
         } 
         .subheader{               
             font-size: 31px;
             line-height: 51px;  
         }  
-        .button_promo {
-            margin-left: 50px;
-            margin-top: 80px;
+        .button_promo{
+            margin: 0 auto;
+            margin-left: 484px;
+            margin-top: 109px;
         }
     }
 }

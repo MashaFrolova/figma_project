@@ -27,7 +27,6 @@
             width: 552px;
             min-height: 182px;
             margin: 0 auto;
-            margin-right: 360px;
             h2{
                 font-weight: 400;
                 font-size: 48px;
@@ -49,6 +48,7 @@
         }
         &__wrapper {
             display: flex;
+            flex-direction: row;
             justify-content: space-between;
             padding: 0px;
             width: 1228px;
@@ -100,8 +100,6 @@
                         padding: 23px 20px;
                         width: 353px;
                         height: 193px;
-                        left: 50px;
-                        top: 323px;
                         background: #F5F5F5;
                         border: 1px solid #E8E8E8;
                         box-sizing: border-box;

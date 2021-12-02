@@ -2,7 +2,6 @@
     width: 1777px;
 }
 .promo{
-    // position: relative;
     min-height: 1045px;
     display: flex;
     flex-direction: column;
@@ -13,16 +12,13 @@
     width: 100%;
     margin: 0 auto;
     margin-bottom: 80px; 
-    margin-top: 0;
-    top: 0; 
+    margin-top: 0; 
     header {
-        // position: absolute;
         display: flex;
         justify-content: space-between;
         width: 1210px;
         margin: 0 auto;
         nav {
-            // position: absolute;
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -50,14 +46,12 @@
             }
         }
         .header__logo {
-            // position: absolute;
             display: inline;
             width: 246px;
             height: 78px;
             margin: 39px 270.54px 39px 0px;
         }
         .header__social {
-            // position: absolute;
             display: flex;
             justify-content: space-between;
             align-items: center;

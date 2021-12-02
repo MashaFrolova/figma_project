@@ -16,22 +16,23 @@
 		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
     }
     &_promo {
-        padding: 20px;        
+        padding: 20px;  
+        margin: 0 auto;
+        margin-left: 725px;
         margin-top: 110px;
-        margin-right: 50px;
     }
     &_macbook {
         margin-top: 60px;
         font-weight: 900;
         height: 60px;
-        line-height: 28px;
+        line-height: 38px;
     }
     &_partners {
         height: 60px;
         font-weight: 900;
         font-size: 20px;
         line-height: 28px;
-        margin: 80px 602px 0px 602px;
+        margin: 0 auto;
     }
     &_testimonials {
         width: 276px;
@@ -65,6 +66,7 @@
         width: 145px;
         height: 56px;
         text-align: center;
+        margin-top: 45px;
         margin-left: 50px;
         margin-bottom: 52px;
     }

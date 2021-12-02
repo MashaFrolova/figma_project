@@ -15,9 +15,9 @@ body{
     overflow-x: hidden;
 }
 
-// section {
-//     width: 100%;
-// }
+section {
+    min-width: 100%;
+}
 .container{
     margin: 0 auto;
 }
@@ -40,39 +40,13 @@ body{
 @import 'blocks/buttons';
 @import 'blocks/features';
 @import 'blocks/macbook';
+@import 'blocks/subscribe';
 @import 'blocks/partners';
 @import 'blocks/testimonials';
 @import 'blocks/pricing';
 @import 'blocks/contacts';
 @import 'blocks/footer';
-@import 'blocks/subscribe';
-@import 'blocks/media/768/promo768';
-@import 'blocks/media/768/features768';
-@import 'blocks/media/768/macbook768';
-@import 'blocks/media/768/pricing768';
-@import 'blocks/media/768/subscribe768';
-@import 'blocks/media/768/partners768';
-@import 'blocks/media/768/testimonials768';
-@import 'blocks/media/768/contacts768';
-@import 'blocks/media/768/footer768';
-@import 'blocks/media/576/promo576';
-@import 'blocks/media/576/features576';
-@import 'blocks/media/576/macbook576';
-@import 'blocks/media/576/pricing576';
-@import 'blocks/media/576/subscribe576';
-@import 'blocks/media/576/partners576';
-@import 'blocks/media/576/testimonials576';
-@import 'blocks/media/576/contacts576';
-@import 'blocks/media/576/footer576';
-@import 'blocks/media/992/promo992';
-@import 'blocks/media/992/features992';
-@import 'blocks/media/992/macbook992';
-@import 'blocks/media/992/pricing992';
-@import 'blocks/media/992/subscribe992';
-@import 'blocks/media/992/partners992';
-@import 'blocks/media/992/testimonials992';
-@import 'blocks/media/992/contacts992';
-@import 'blocks/media/992/footer992';
+
 @import 'blocks/media/1200/promo1200';
 @import 'blocks/media/1200/features1200';
 @import 'blocks/media/1200/macbook1200';
@@ -82,6 +56,36 @@ body{
 @import 'blocks/media/1200/testimonials1200';
 @import 'blocks/media/1200/contacts1200';
 @import 'blocks/media/1200/footer1200';
+
+@import 'blocks/media/992/promo992';
+@import 'blocks/media/992/features992';
+// @import 'blocks/media/992/macbook992';
+// @import 'blocks/media/992/pricing992';
+// @import 'blocks/media/992/subscribe992';
+// @import 'blocks/media/992/partners992';
+// @import 'blocks/media/992/testimonials992';
+// @import 'blocks/media/992/contacts992';
+@import 'blocks/media/992/footer992';
+
+// @import 'blocks/media/768/promo768';
+// @import 'blocks/media/768/features768';
+// @import 'blocks/media/768/macbook768';
+// @import 'blocks/media/768/pricing768';
+// @import 'blocks/media/768/subscribe768';
+// @import 'blocks/media/768/partners768';
+// @import 'blocks/media/768/testimonials768';
+// @import 'blocks/media/768/contacts768';
+// @import 'blocks/media/768/footer768';
+// @import 'blocks/media/576/promo576';
+// @import 'blocks/media/576/features576';
+// @import 'blocks/media/576/macbook576';
+// @import 'blocks/media/576/pricing576';
+// @import 'blocks/media/576/subscribe576';
+// @import 'blocks/media/576/partners576';
+// @import 'blocks/media/576/testimonials576';
+// @import 'blocks/media/576/contacts576';
+// @import 'blocks/media/576/footer576';
+
 
 
 

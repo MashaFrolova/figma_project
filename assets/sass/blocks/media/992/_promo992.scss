@@ -1,5 +1,97 @@
 @media (max-width: 992px){
     .container{
-        max-width: 720px;
+        min-width: 991px;
+    }
+    .promo{
+        header {
+            width: 100%;
+            nav {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 65%;
+                height: 48px;
+                margin: 0;
+                margin-top: 50px;
+                margin-left: 40px;
+            }      
+            ul {    
+                display: flex;
+                justify-content: space-around;
+                text-align: center;
+                list-style-type: none;
+                padding: 10px;            
+                li { 
+                    margin-right: 10px;
+                    padding-right: 10px;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 28px;
+                    text-decoration: none;
+                    color: #ffff;  
+                    &:last-child {
+                        margin-right: 0;
+                    }                           
+                }
+            }
+            .hamburger {
+                display: none;
+            } 
+            .header__logo{
+                margin-right: 185px;
+            }
+        }
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 885px;
+            margin: 0 auto;
+            margin-top: 80px;
+            &__text {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 826px;
+                height: 335px;
+                margin: 0 auto;
+                margin-left: 88px;
+                margin-bottom: 50px;
+                padding: 20px 0px;
+                &_header{
+                    font-weight: 900;
+                    font-size: 74px;
+                    line-height: 84px;
+                    text-align: center;
+                    letter-spacing: 0.2px;
+                    color: #FFFFFF;
+                }
+                &_subheader{
+                    margin: 0px 10px 20px 0px;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 28px;
+                    line-height: 40px;
+                    text-align: center;
+                    letter-spacing: 0.2px;
+                    color: #FFFFFF;
+                    span {
+                        margin-bottom: 30px;
+                        font-weight: 400;
+                        font-size: 28px;
+                        line-height: 40px;
+                        text-align: center;
+                        letter-spacing: 0.2px;
+                        color: #FFFFFF; 
+                    }    
+                }  
+            } 
+            .button_promo{
+                margin: 0 auto;
+                margin-left: 400px;
+                margin-top: 122px;
+            } 
+        }  
     }
 }

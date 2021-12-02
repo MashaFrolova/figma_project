@@ -1,19 +1,19 @@
 .container{
-    width: 1770px;
+    min-width: 1460px;
+    max-width: 1770px;
 }
 .macbook {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 924px;
     background: #FFFFFF; 
-    padding: 226px 82px;   
-    margin-bottom: 0;
+    padding: 0px 82px 0px 0px;   
+    margin-bottom: 80px;
     &__wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 43px 0px;
+        padding: 0;
         width: 1243.3px;
         height: 472px;
         margin: 0 auto;
@@ -23,8 +23,8 @@
             align-items: flex-start;
             width: 532px;
             height: 357px;
-            top: 57.5px;
-            left: 50px;
+            margin: 0 auto;
+            margin-right: 0px;
             .header {
                 font-weight: 400;
                 font-size: 48px;
@@ -49,7 +49,6 @@
             height: 386px;
             top: 43px;
             right: 50px;
-            // margin: 43px 0px 50px 43px;
             img {
                 display: block;
                 width: 646.07px;

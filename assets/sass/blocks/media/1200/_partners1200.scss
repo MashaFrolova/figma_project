@@ -1,6 +1,6 @@
-@media (max-width: 1200px){
+@media (max-width:1200px){
     .container{
-        max-width: 960px;
+        min-width: 1199px;
     }
     .partners {
         display: flex;
@@ -20,6 +20,7 @@
             width: 552px;
             height: 222px;
             margin: 0 auto;
+            margin-left: 347px;
             margin-bottom: 80px;
             .header {
                 font-weight: 400;
@@ -36,9 +37,11 @@
             }
         }
         &__items {
-            width: 100%;
+            width: 90%;
             margin: 0px 10px;
             &__row {
+                left: 0;
+                right: 0;
                 width: 100%;
                 &_item {
                     padding: 0;
@@ -50,6 +53,8 @@
             }
             &__row {
                 &_2{
+                    left: 0;
+                    right: 0;
                     width: 100%;
                     &_item {
                         padding: 0;
