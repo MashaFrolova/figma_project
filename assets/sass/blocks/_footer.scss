@@ -1,5 +1,5 @@
 .container{
-    width: 1770px;
+    max-width: 1770px;
 }
 .footer {
     min-height: 567px;
@@ -30,7 +30,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 170px;
+            min-width: 170px;
             height: 267px;
             margin: 0px 20px 0px 0px;
             h3 {
@@ -72,7 +72,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 186px;
+            min-width: 186px;
             height: 267px;
             margin: 0px 20px 0px 0px;
             h3 {
@@ -112,7 +112,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 186px;
+            min-width: 186px;
             height: 267px;
             margin: 0;
             margin-right: 125px;
@@ -152,7 +152,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        width: 284px;
+        min-width: 284px;
         height: 193.99px;
         margin: 0px 0px 73.01px 0px;
         padding: 0;
@@ -161,7 +161,7 @@
             flex-direction: row;
             align-items: center;
             padding: 0px;
-            width: 284px;
+            min-width: 284px;
             height: 46px;
             margin: 0px 0px 10px 0px;
             img {

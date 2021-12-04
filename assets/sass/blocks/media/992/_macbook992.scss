@@ -1,38 +1,11 @@
-@media (min-width: 992px) and (max-width:1199px){
+@media (max-width: 992px){
     .container{
-        width: 992px;
-        height: 100%;
-        margin: 0 auto;
+        max-width: 720px;
     }
     .macbook { 
-        padding: 0;   
-        margin-bottom: 0;
-        width: 100%;
-        height: 100%;
         &__wrapper {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-            height: 100%;
-            margin: 0 auto;
-            margin-left: 0px;
-            margin-right: 0;
-            &_content {
-                margin: 0 auto;
-                margin-left: 232px;
-                .subheader {
-                   text-align: center;
-                }
-            }
             &_screen {
-                right: 50%;
-                margin: 0 auto;
-                margin-left: 190px;
-            }
-            .button_macbook{
-                margin: 0 auto;
-                margin-bottom: 50px;
+                margin-bottom: 80px;
             }
         }
     }

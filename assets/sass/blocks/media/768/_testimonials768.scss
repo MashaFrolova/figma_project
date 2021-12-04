@@ -3,14 +3,13 @@
         max-width: 540px;
     }
     .testimonials {
-        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
         min-height: 787.05px;
         margin: 0 auto;
         padding: 0px 28px;
-        margin-bottom: 80px;
+        margin-bottom: 0px;
         &__h2{
             width: 301px;
             height: 75px;
@@ -19,32 +18,29 @@
             margin-bottom: 0;
         }
         &__row {
-            position: relative;
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 275.48px;
-            height: 250.56px;
+            width:100%;
             left: 0px;
             top: 0px;
             margin: 0 auto;
             margin-bottom: 80px;
             &_logo {
-                position: absolute;
-                width: 126.68px;
-                height: 50.72px;
-                left: 85.11px;
-                top: 0px;
+                width: 149.85px;
+                height: 60px;
                 margin: 0 auto;
-                margin-bottom: 80px;
+                margin-bottom: 50px;     
+                img{
+                    margin: 0 auto;
+                }
             }
             &_text{
-                position: absolute;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 padding: 0px;
-                width: 418px;
+                width: 100%;
                 height: 182px;
                 top: 100px;
                 margin: 0 auto;
@@ -58,22 +54,18 @@
                 }
             }
             &_client {
-                position: absolute;
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
                 align-content: center;
                 width: 128.26px;
                 height: 42.38px;
-                left: 84.32px;
-                top: 208.23px;
                 padding: 0px;
                 margin: 0 auto;
+                margin-bottom: 80px;
                 &_avatar {
                     width: 42.27px;
                     height: 42.27px;
-                    left: 0px;
-                    top: 0.06px;
                     margin: 0px 13px;
                     img{
                         src: url ('../assets/img/mobile/avatar_mobile.jpg');
@@ -83,11 +75,11 @@
                     display: flex;
                     flex-direction: column;
                     align-items: stretch;
-                    min-width: 100%;
+                    width: 100%;
                     min-height: 42.38px;
                     margin-top: 20px;
                     h6 {
-                        min-width: 100%;
+                        width: 100%;
                         font-weight: 700;
                         font-size: 10.1442px;
                         line-height: 15px;
@@ -106,22 +98,9 @@
                 }
             }
         }
-        &__button {
-            position: absolute;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 987px;
-            height: 240px;
-            padding: 0px;
-            bottom: 240px;
-            top: 616.05px;
-            margin: 80px 41.5px 100px 41.5px;
-            left: 41.5px;
-            // top: 50%;
-            left: 50%;
-            margin-right: -50%;
-            transform: translate(-50%, -50%)
+        .testimonials__button {
+            margin: 0 auto;
+            margin-top: 140px;          
         }
     }
 }

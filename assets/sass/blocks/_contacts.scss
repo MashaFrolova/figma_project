@@ -13,19 +13,19 @@
     &__content{
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         align-items: center;
         width: 1228px;
-        height: 1001px;
+        height: 100%;
         margin: 0 auto;
         margin-bottom: 52px;
-        padding-bottom: 50px;
+        order: 0;
         &__text {
             display: flex;
             flex-direction: column;
             align-items: center;
             padding: 10px;
             width: 552px;
-            min-height: 182px;
             margin: 0 auto;
             h2{
                 font-weight: 400;
@@ -53,50 +53,55 @@
             padding: 0px;
             width: 1228px;
             height: 669px;
-            margin: 50px 0px;
-            order: 1;
+            margin: 0px 0px 50px 0px;
+            order: 0;
             &_left {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
                 width: 453px;
-                height: 669px;
-                margin-right: 50px; 
-                order: 0;
-                background: #FFFFFF;
-                border: 1px solid #DDDDDD;
-                box-sizing: border-box;
-                box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
-                border-radius: 20px;
-                h3 {
-                    font-weight: 900;
-                    font-size: 20px;
-                    line-height: 28px;
-                    letter-spacing: 0.1px;
-                    text-align: center;
-                    color: #252B42;
-                    margin: 0 auto;
-                    margin-top: 52px;
-                    margin-bottom: 45px;
-                }
-                input {
+                height: 100%;           
+                .form{                    
+                    background: #FFFFFF;
+                    border: 1px solid #DDDDDD;
+                    box-sizing: border-box;
+                    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+                    border-radius: 20px;
                     display: flex;
                     flex-direction: column;
-                    align-items: flex-start;
-                    width: 353px;
-                    height: 54px;                        
-                    margin: 0px 50px 45px 50px;
-                    padding-left: 20px;
-                    background: #F5F5F5;
-                    border: 1px solid #E8E8E8;
-                    box-sizing: border-box;
-                    border-radius: 39px;
-                    font-weight: 400;
-                    font-size: 15px;
-                    line-height: 16px;
-                    letter-spacing: 0.1px;
-                    color: #18171D;
-                    textarea {
+                    align-items: center;
+                    width: 453px;
+                    height: 100%;
+                    padding: 0px 50px 52px 50px;
+                    margin-right: 50px;
+                    order: 0; 
+                    input {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        width: 353px;
+                        height: 54px;                        
+                        margin: 0px 50px 45px 50px;
+                        padding-left: 20px;
+                        background: #F5F5F5;
+                        border: 1px solid #E8E8E8;
+                        box-sizing: border-box;
+                        border-radius: 39px;
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 16px;
+                        letter-spacing: 0.1px;
+                        color: #18171D;
+                        h3 {
+                            font-weight: 900;
+                            font-size: 20px;
+                            line-height: 28px;
+                            letter-spacing: 0.1px;
+                            text-align: center;
+                            color: #252B42;
+                            margin: 0 auto;
+                            margin-top: 52px;
+                            margin-bottom: 45px;
+                        }
+                    }
+                    .wpcf7-textarea {
                         padding: 23px 20px;
                         width: 353px;
                         height: 193px;
@@ -108,7 +113,13 @@
                         align-self: stretch;
                         flex-grow: 0;
                         margin-left: 50px;
-                        margin-bottom: 45px;
+                    }
+                    .button.button_contacts{
+                        width: 145px;
+                        height: 56px;
+                        text-align: center;
+                        margin-top: 45px;
+                        margin-left: 50px;
                     }
                 }
             }
@@ -118,9 +129,10 @@
                 align-items: flex-start;
                 padding: 0px;
                 width: 725px;
-                height: 612.17px;
-                margin: 28.41px 0px;
-                order:1;
+                height: 612,17px;
+                margin: 0 auto;
+                margin-top: 80px;
+                order:0;
                 &_items {
                     display: flex;
                     justify-content: space-between;
@@ -191,7 +203,7 @@
                     padding: 10px;
                     margin-left: 0;
                     margin-bottom: 0;
-                    order: 2;
+                    order: 1;
                     &_link {
                         width: 40.99px;
                         height: 40.99px;

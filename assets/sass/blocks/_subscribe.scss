@@ -26,8 +26,7 @@
             flex-grow: 0;
             order: 0;
             img{
-                margin: 0 auto;
-                margin-left: 0;                    
+                margin: 0 auto;                  
             }
         }
         &_content {
@@ -52,12 +51,15 @@
                     text-align: start;
                     letter-spacing: 0.2px;
                     color: $second-color;
+                    order:0;
                 }
                 .desktop{
                     margin: 7px 0px 25px 0px;
+                    order:0;
                 }
                 .mobile{                        
                     display: none;
+                    order:0;
                 }
                 h3 {
                     font-weight: 900;
@@ -66,9 +68,11 @@
                     letter-spacing: 0.1px;
                     color: $second-color;
                     margin-top: 121px;
+                    order:0;
                 }             
                 h4 {
                     display: none;
+                    order:0;
                 } 
             }            
             &_form {
@@ -76,7 +80,7 @@
                 width: 477px;
                 height: 199px;
                 margin: 15px 0px 0px 0px;
-                order:1;
+                order:0;
                 margin: 0 auto;
                 margin-left: 0px;
                 h3 {
@@ -86,6 +90,7 @@
                     letter-spacing: 0.1px;
                     color: $second-color;
                     margin: 10px 0px 0px 10px;
+                    order:0;
                 }
                 p {
                     font-weight: 400;
@@ -94,6 +99,7 @@
                     letter-spacing: 0.2px;
                     color: $third-color;
                     margin: 10px 0px 0px 10px;
+                    order:0;
                 }
                 div {
                     order: 0;   

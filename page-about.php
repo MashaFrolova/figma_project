@@ -10,6 +10,7 @@ Template Name: About
     <section class="subscribe">
         <div class="container">
             <div class="subscribe__wrapper">
+                
                 <div class="subscribe__wrapper_picture">
                     <img src="<?php echo bloginfo ('template_url');?>/assets/img/newsletter.png" alt="newsletter">
                 </div>

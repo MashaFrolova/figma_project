@@ -1,20 +1,26 @@
 @media (max-width:1200px){
     .container{
-        min-width: 1199px;
+        max-width: 960px;
     }
     .pricing {
+        min-width: 960px;
+        &__text{
+            margin: 0 auto;
+        }
         &__items {
             width: 100%;
+            margin: 0 auto;
+            margin-top: 100px;
         }  
         &__white {
             padding: 10px;
-            margin: 43px 20px;
+            margin: 43px 40px 43px 0px;
         }
         &__blue {
             padding: 53px 20px;
         }
         &__white_2 {
-            margin: 43px 20px;
+            margin: 43px 0px 43px 40px;
             padding: 10px;
             &_text_2 {
                 display: flex;
@@ -110,5 +116,8 @@
                 color: $second-color;  
             }
         }
+        // .button_pricing{
+        //     margin: 30px 34px 0px 34px;
+        // }
     }
 }

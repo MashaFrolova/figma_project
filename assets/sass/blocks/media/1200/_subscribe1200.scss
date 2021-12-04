@@ -1,6 +1,6 @@
 @media (max-width:1200px){
     .container{
-        min-width: 1199px;
+        max-width: 960px;
     }
     .subscribe {
         min-height: 100%;
@@ -18,13 +18,10 @@
                 align-self: center;
                 width: 85%;
                 margin: 0 auto;
-                margin-left: 0;
-                margin-right: 0;
                 margin-top: 106px;
-                order: 1;
+                order: -2;
                 img{
-                    margin: 0 auto;
-                    margin-left: 152px;                    
+                    margin: 0 auto;                  
                 }
             }
             &_content {
@@ -34,13 +31,13 @@
                 align-self: center;
                 width: 544px;
                 height: 500px; 
-                order: 0; 
+                order: -1; 
                 margin: 0 auto;
-                margin-left: 357px;
                 &_text{                
                     align-self: center;
                     text-align: center;
                     margin-right: 20px;
+                    order:-2;
                     h2{
                         margin: 0 auto;
                         font-size: 60px;
@@ -64,12 +61,16 @@
                     } 
                 }            
                 &_form {
+                    order:-5;
                     align-self: center;
                     h3 {
-                        margin-left: 100px;
+                        text-align: center;
+                        margin: 0 auto;
+                        font-size: 24px;
                     }
                     p {
-                        margin-left: 87px;
+                       text-align: center;
+                       font-size: 23px;
                     }
                 }     
             }

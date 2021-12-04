@@ -23,10 +23,10 @@
             align-items: center;
             width: 100%;
             min-height: 267px;
-            margin-right: 49px;
+            margin: 0 auto;
             margin-bottom: 73px;
             &_pages {
-                width: 186px;
+                min-width: 186px;
                 height: 267px;
                 margin: 0 auto;
                 margin-bottom: 73px;
@@ -43,20 +43,22 @@
             }
             
             &_tomothy {
-                width: 186px;
+                min-width: 186px;
                 height: 267px;
                 margin: 0 auto;
                 margin-bottom: 73px;
+                text-align: center;
                 li{
                     text-align: center;
                 }
             }
             
             &_jane {
-                width: 186px;
+                min-width: 186px;
                 height: 267px;
                 margin: 0 auto;
                 margin-bottom: 76px;
+                text-align: center;
                 li{
                     text-align: center;
                 }
@@ -66,7 +68,8 @@
             justify-content: flex-start;
             width: 284px;
             height: 193.99px;
-            margin: 0px 67px 107px 67px;
+            margin: 0 auto;
+            margin-bottom: 107px;
         }
         &__social {
             margin: 0 auto;

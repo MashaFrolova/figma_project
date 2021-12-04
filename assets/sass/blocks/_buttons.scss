@@ -18,8 +18,9 @@
     &_promo {
         padding: 20px;  
         margin: 0 auto;
-        margin-left: 725px;
-        margin-top: 110px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 80px;
     }
     &_macbook {
         margin-top: 60px;
@@ -62,14 +63,14 @@
             
         }
     }
-    &_contacts {
-        width: 145px;
-        height: 56px;
-        text-align: center;
-        margin-top: 45px;
-        margin-left: 50px;
-        margin-bottom: 52px;
-    }
+    // &_contacts {
+    //     width: 145px;
+    //     height: 56px;
+    //     text-align: center;
+    //     margin-top: 45px;
+    //     margin-left: 50px;
+    //     margin-bottom: 52px;
+    // }
     &_subscribe {
         margin: 34px 0px;
         width: 172px;

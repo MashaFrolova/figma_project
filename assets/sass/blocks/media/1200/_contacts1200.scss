@@ -1,6 +1,6 @@
 @media (max-width:1200px){
     .container{
-        min-width: 1199px;
+        max-width: 960px;
     }
     .contacts {
         height: 1485px;
@@ -11,10 +11,11 @@
             flex-direction: column;
             align-items: center;
             width: 100%;
-            height: 1001px;
-            padding-bottom: 50px;
+            height: 100%;
+            order: 0;
             &__text {
-                margin: 50px 0px;
+                margin: 0 auto;
+                margin-bottom: 0;
             }
             &__wrapper {
                 display: flex;
@@ -22,18 +23,23 @@
                 align-items: center;
                 justify-content: center;
                 width: 100%;
-                height: 100vh;
+                height: 100%;
+                order: 0;
+                margin-top: 0;
                 &_left {
+                    height: 100%;
+                    margin: 0 auto;
+                    margin-top: 0px;
+                    margin-left: 0;
                     margin-right: 0px;
-                    input{
-                        textarea{
-                            margin: 0 auto;
-                            margin-left: 50px;
-                        }
-                    }
+                    order: 0;
                 }
                 &_right {
+                    margin-top: 0;
                     align-items: center;
+                    &_social {
+                        order: 1;
+                    }
                 }
             }
         }

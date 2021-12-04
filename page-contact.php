@@ -19,9 +19,18 @@ Template Name: Contact
                 </div>
                 <div class="contacts__content__wrapper">
                     <div class="contacts__content__wrapper_left">
-                        <h3>Contact Us</h3>
-                        <div>
-                            <?php echo do_shortcode( '[contact-form-7 id="117" title="Contact_form"]' ); ?>
+                        
+                        <div class="form">
+                            <h3 style="font-weight: 900;
+                                font-size: 20px;
+                                line-height: 28px;
+                                letter-spacing: 0.1px;
+                                text-align: center;
+                                color: #252B42;
+                                margin: 0 auto;
+                                margin-top: 52px;
+                                margin-bottom: 45px;">Contact Us</h3>
+                            <?php echo do_shortcode( '[contact-form-7 id="330" title="Contact_form_copy"]' ); ?>
                         </div>
                     </div>
                     <div class="contacts__content__wrapper_right">

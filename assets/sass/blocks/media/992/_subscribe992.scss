@@ -1,5 +1,14 @@
 @media (max-width: 992px){
     .container{
-        max-width: 720px;
+        max-width: 720px;;
+    }
+    .subscribe {
+        &__wrapper{
+            &_picture {
+                img{
+                    margin-left: 0;                    
+                }
+            }
+        }
     }
 }

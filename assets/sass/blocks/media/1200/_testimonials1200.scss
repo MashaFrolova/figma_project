@@ -1,6 +1,6 @@
 @media (max-width:1200px){
     .container{
-        min-width: 1199px;
+        max-width: 960px;
     }
     .testimonials {
         display: flex;
@@ -8,6 +8,7 @@
         align-items: center;
         height: 810px;
         margin: 0 auto;
+        margin-top: 100px;
         background: #FFFFFF;
         &__title{
             display: flex;
@@ -44,8 +45,8 @@
             &_text{
                 h4 {
                     margin-right: 36px;
-                    font-size: 32px;
-                    line-height: 46px;
+                    font-size: 27px;
+                    line-height: 40px;
                 }
             }
           
@@ -78,6 +79,7 @@
                         line-height: 28px;
                         letter-spacing: 0.2px;
                         color: $second-color;
+                        text-align: center;
                         margin: 0px 10px;
                     }
                 }
