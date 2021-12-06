@@ -2,10 +2,9 @@
     .container{
         max-width: 960px;
     }
-    .contacts {
-        height: 1485px;
-        max-height: 100%;   
-        margin-bottom: 202px;
+    .contacts {  
+        margin-bottom: 0;
+        order: 7;
         &__content{
             display: flex;
             flex-direction: column;

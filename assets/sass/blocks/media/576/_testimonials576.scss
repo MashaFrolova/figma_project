@@ -1,9 +1,29 @@
-@media (max-width: 576px){
+@media (max-width: 576px) {
     .container {
         width: 100%;
+        padding: 0 10px;
     }
     .testimonials {
         padding: 0;
+        margin-top: 80px;
+        &__title{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 301px;
+            height: 75px;
+            margin: 0 auto;
+            margin-bottom: 50px;
+            .header{
+                font-weight: 400;
+                font-size: 48px;
+                line-height: 55px;
+                text-align: center;
+                letter-spacing: 0.2px;
+                color: $second-color;
+                margin: 0 auto;
+            }
+        }
         &__row {
             margin: 0;
             &_logo {
@@ -13,10 +33,11 @@
                 left: 85.11px;
                 top: 0px;
                 margin: 0 auto;
-                margin-bottom: 80px;
+                margin-bottom: 50px;
             }
             &_text{
-                top: 80px;
+                margin: 0 auto;
+                margin-bottom: 0;
                 h4 {                    
                     font-weight: 800;
                     font-size: 18.5px;
@@ -24,15 +45,14 @@
                     text-align: center;
                     letter-spacing: 1.16907px;
                     width: 60%;
-                    right: 50%;
-                    transform: translateX(8%);
+                    margin: 0 auto;
                     margin-bottom: 0;
+                    margin-top: 0;
                 }
             }
             &_client {
-                left: 50%;
-                transform: translateX(-21%);
-                margin-top: 80px;
+                margin: 0 auto;
+                margin-top: 0;
                 &_avatar {
                     width: 42.27px;
                     height: 42.27px;
@@ -70,13 +90,10 @@
                 }
             }
         }
-        &__button {
-            left: 50%;
-            margin-right: -50%;
-            margin-bottom: 0;
-            transform: translate(-54%, -50%);
-            bottom: 0;
-            
+        .testimonials__button{
+           margin: 0 auto;
+           margin-bottom: 0;
+           margin-top: 0;            
         }
     }
 }

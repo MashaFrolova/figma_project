@@ -1,14 +1,18 @@
-@media (max-width: 576px){
+@media (max-width: 576px) {
     .container {
         width: 100%;
+        padding: 0 10px;
     }
     .macbook {
         padding: 0;
         &__wrapper {
+            width: 100%;
             margin: 0;
             margin-right: 0;
             &_content {
+                width: 100%;
                 margin: 0;
+                margin-bottom: 80px;
                 .header {
                     font-size: 37px;
                     line-height: 45px;
@@ -25,7 +29,10 @@
                     }
                 }
                 button.button_macbook {
-                    margin-right: 50px;
+                    margin: 0 auto;
+                    margin-top: 0;
+                    margin-left:0;
+                    margin-right: 0;
                     top: 0px;
                 }
             }
@@ -33,13 +40,11 @@
                 width: 100%;
                 margin-right: 50px;
                 bottom: 50px;
-                // margin-bottom: 50px;
                 img {
                 width: 378.95px;
                 height: 211.89px;
                 left: -3.48px;
                 top: 6.56px;
-                // margin: 6.56px 3.48px;
                 }
             }
         } 

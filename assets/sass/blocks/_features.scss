@@ -6,17 +6,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 1362.3px;
     margin-bottom: 0;
     padding: 0;
+    order: 1;
     &__wrapper {
         display: flex;
         flex-direction: column;   
         align-items: center;
         max-width: 1777px;
-        height: 1361.3px;
         margin: 0 auto;
-        margin-bottom: 0;
+        margin-bottom: 50px;
         padding: 0;
         &__text {
             display: flex;
@@ -46,16 +45,15 @@
                 text-align: center;
                 letter-spacing: 0.2px;
                 color: $third-color; 
-                // span{
-                //     display: inline-block;
-                //     margin: 10px;
-                //     font-weight: normal;
-                //     font-size: 28px;
-                //     line-height: 40px;
-                //     text-align: center;
-                //     letter-spacing: 0.2px;
-                //     color: $third-color; 
-                // }
+                span{
+                    margin: 10px;
+                    font-weight: normal;
+                    font-size: 28px;
+                    line-height: 40px;
+                    text-align: center;
+                    letter-spacing: 0.2px;
+                    color: $third-color; 
+                }
             }
         }
         &__items{
@@ -111,14 +109,11 @@
             flex-direction: column;
             align-items: center;
             width: 1058.19px;  
-            height: 762.3px;
             margin: 0 auto;
             padding: 0px 0px 52px 0px;
             background: #FFFFFF;
-            bottom: 80px;
             order: 0;
             flex-grow: 0;
-            top: 0;
             &_desktop {
                 display: block;
                 position: relative;

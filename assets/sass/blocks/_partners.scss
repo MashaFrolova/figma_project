@@ -7,15 +7,14 @@
     justify-content: space-between;
     align-items: center;
     padding: 0;
-    height: 932px; 
     margin: 0 auto;
+    order: 4;
     &__text {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 0px;
         width: 552px;
-        height: 222px;
         margin: 0 auto;
         margin-bottom: 80px;
         .header {
@@ -25,6 +24,7 @@
             text-align: center;
             letter-spacing: 0.2px;  
             color: $second-color;
+            margin: 0 auto;
         }
         .subheader{
             margin-top: 17px;
@@ -35,6 +35,7 @@
             letter-spacing: 0.2px;
             color: $third-color;  
             padding: 10px;
+            margin: 0 auto;
         }
     }
     &__items {
@@ -81,11 +82,13 @@
                     color: #374754;
                     text-align: center;
                     margin-bottom: 15px;
+                    order:0;
                 }
                 img {
                     display: inline;
                     text-align: center;
                     margin: 0 auto;
+                    order:0;
                 }
             }
         }

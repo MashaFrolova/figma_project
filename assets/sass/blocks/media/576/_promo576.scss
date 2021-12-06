@@ -1,10 +1,10 @@
-@media (max-width: 576px){
+@media (max-width: 576px) {
     .container {
-        min-width: 100%;
+        width: 100%;
+        padding: 0 10px;
     }
     .promo {    
         position: relative; 
-        max-height: 663px;
         background: url('./assets/img/mobile/bg_mobile.jpg') center center/cover no-repeat;
         background-size: 100% 100%;
         header {
@@ -15,7 +15,7 @@
                 display: block;
                 flex-direction: column;
                 align-items: center;
-                width: 40%;
+                width: 70%;
                 height: 100vh;
                 margin: 0 auto;
             }      
@@ -51,7 +51,7 @@
                     }                        
                 }
                 &.menu_active { 
-                    width: 246px;
+                width: 70%;
                     overflow: hidden;
                 }
             }
@@ -66,7 +66,7 @@
                 left: 85%;
             } 
             .header__logo {
-                left: 10%;
+               left: 40px;
             }
             .header__social {
                 display: none;
@@ -80,7 +80,6 @@
                 min-width: 85%;
                 padding: 0;
                 margin-bottom: 80px;
-                margin-right: 73px;
                 &_header{
                     font-weight: 400;
                     font-size: 45px;
@@ -94,8 +93,8 @@
             }  
         }
         .button_promo{
-            right: 50%;
-            transform: translateX(-19%);                
+            margin-right: 0;
+            margin-left: 15px;            
         } 
     }
 }

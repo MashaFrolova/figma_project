@@ -3,11 +3,12 @@
 }
 .testimonials {
     display: flex;
+    order: 5;
     flex-direction: column;
     align-items: center;
-    height: 810px;
     margin: 0 auto;
     background: #FFFFFF;
+    padding-bottom: 150px;
     &__title{
         display: flex;
         flex-direction: column;

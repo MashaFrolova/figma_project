@@ -4,10 +4,78 @@
     }
     .subscribe {
         &__wrapper{
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            align-self:center;
+            min-height: 100%;
+            width: 100%;
+            padding: 0;
+            margin: 0 auto;
+            margin-bottom: 200px;
             &_picture {
+                align-self: center;
+                width: 85%;
+                margin: 0 auto;
+                margin-top: 106px;
+                order: -2;
                 img{
-                    margin-left: 0;                    
+                    margin: 0 auto;                  
                 }
+            }
+            &_content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-self: center;
+                width: 544px;
+                height: 500px; 
+                order: -5; 
+                margin: 0 auto;
+                margin-bottom: 80px;
+                &_text{     
+                    width: 100%;           
+                    align-self: center;
+                    text-align: center;
+                    order:-2;
+                    margin: 0 auto;
+                    margin-bottom: 80px;
+                    h2{
+                        width: 100%;
+                        margin: 0 auto;
+                        font-size: 60px;
+                        text-align: center;
+                        br {
+                            display: none;
+                        }
+                    }
+                    .desktop{
+                        width: 100%;
+                        text-align: center;
+                        margin: 0 auto;
+                        margin-top: 7px;
+                        margin-bottom: 25px;
+                    }
+                    h3 {
+                        font-size: 24px;
+                    }             
+                    h4 {
+                        display: none;
+                    } 
+                }            
+                &_form {
+                    order:0;
+                    align-self: center;
+                    h3 {
+                        text-align: center;
+                        margin: 0 auto;
+                        font-size: 24px;
+                    }
+                    p {
+                       text-align: center;
+                       font-size: 23px;
+                    }
+                }     
             }
         }
     }

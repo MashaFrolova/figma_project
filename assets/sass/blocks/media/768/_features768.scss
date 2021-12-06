@@ -3,7 +3,6 @@
         max-width: 540px;
     }
     .features {
-        min-height: 1595.12px;
         &__wrapper{
             width: 418px;
             height: 1435.12px;
@@ -13,6 +12,7 @@
                 display: block;
                 width: 285px;
                 height: 182px;
+                margin-bottom: 80px;
                 order: 0;           
                 .header {
                     padding-bottom: 17px;
@@ -24,10 +24,9 @@
                     margin: 0;
                     text-align: center;
                     span {
-                        display: none;
-                    }
-                }
-                
+                    display: none;
+                    }  
+                }              
             }
             &__items{
                 display: flex;
@@ -45,7 +44,8 @@
                     flex-direction: column;
                     align-items: center;
                     max-width: 255px;
-                    margin: 0px 0px 75px 0px;
+                    margin: 0 auto; 
+                    margin-bottom: 80px;
                     .icon {
                         width: 61px;
                         height: 61px;
@@ -76,9 +76,9 @@
             &__video{        
                 order: 1;
                 flex-grow: 0;
-                width: 385.89px;
-                height: 229.12px;
+                width: 100%;
                 margin: 0 auto;
+                margin-bottom: 80px;
                 background: #FFFFFF;
                 padding-top: 0px;   
                 padding-bottom: 0px; 

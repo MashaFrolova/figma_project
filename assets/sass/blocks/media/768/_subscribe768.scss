@@ -3,7 +3,6 @@
         max-width: 540px;
     }
     .subscribe {        
-        min-height: 1104.49px;
         padding: 80px 0px;
         margin: 0 auto;
         margin-bottom: 0;
@@ -31,34 +30,34 @@
                 img {
                     position: absolute;
                     display: block;
-                    width: 100%;
+                    width: 88%;
                     height: 347.49px;
-                    left: 0px;
-                    right: 0px;
-                    margin-left: 0px;
-                    margin-right: 0px;
+                    margin: 0 auto;
                 }
             }
             &_content {
                 align-items: center;
-                width: 552px;
+                width: 100%;
                 max-height: 217px;
-                order: -2;
+                order: -5;
                 flex-grow: 0;
                 margin: 0 auto;
                 margin-top: 80px;
                 margin-bottom: 80px;
                 padding: 0;
                 &_text{
+                    width: 100%;
                     margin: 0 auto;
                     margin-top: 80px;
-                    margin-bottom: 80px;
+                    order:-5;
                     h3 {
+                        width: 100%;
                         margin: 0 auto;
                         margin-top: 0;
                         margin-right: 0;
                     }
                     h2{
+                        width: 100%;
                         text-align: center;
                         margin: 0 auto;
                         margin-top: 17px;
@@ -85,7 +84,7 @@
                 }
                 
                 &_form {
-                    order: 4;
+                    order: 0;
                     display: flex;
                     flex-direction: column;
                     align-items: center;

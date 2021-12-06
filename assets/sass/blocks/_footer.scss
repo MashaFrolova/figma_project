@@ -2,7 +2,6 @@
     max-width: 1770px;
 }
 .footer {
-    min-height: 567px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,6 +13,8 @@
         justify-content: space-between;
         align-items: center;
         margin: 0 auto;
+        margin-top: 80px;
+        margin-bottom: 80px;
         width: 932px;
         height: 267px;
     }

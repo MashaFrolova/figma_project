@@ -3,8 +3,9 @@
         max-width: 960px;
     }
     .pricing {
-        min-width: 960px;
+        width: 100%;
         &__text{
+            width: 100%;
             margin: 0 auto;
         }
         &__items {

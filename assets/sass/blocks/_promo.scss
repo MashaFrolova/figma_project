@@ -13,6 +13,7 @@
     margin: 0 auto;
     margin-bottom: 80px; 
     margin-top: 0; 
+    order: 0;
     header {
         display: flex;
         justify-content: space-between;
@@ -83,7 +84,7 @@
             width: 826px;
             height: 335px;
             margin: 0 auto;
-            margin-bottom: 50px;
+            margin-bottom: 80px;
             padding: 20px 0px;
             &_header{
                 font-weight: 900;

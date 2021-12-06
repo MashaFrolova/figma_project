@@ -1,13 +1,12 @@
-@media (max-width: 576px){
+@media (max-width: 576px) {
     .container {
-        min-width: 100%;
+        width: 100%;
+        padding: 0 10px;
     }
-    .footer {       
-        min-height: 100%;
+    .footer {      
         margin: 0 auto;
         &__wrapper {
-            left: 50%;
-            transform: translateX(6%);
+            margin: 0 auto;
         }
         &__menu {
             min-height: 267px;
@@ -93,7 +92,7 @@
             &_jane {
                 min-width: 186px;
                 height: 267px;
-                margin-left: 50px;
+                margin-left: 0px;
                 h3 {
                     font-weight: 900;
                     font-size: 20px;

@@ -5,11 +5,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 1206px;
     margin: 0 auto;
     margin-top: 73px;    
     padding-bottom: 52px;
     background: #FFFFFF;
+    order: 7;
     &__content{
         display: flex;
         flex-direction: column;
@@ -34,6 +34,7 @@
                 text-align: center;
                 letter-spacing: 0.2px;  
                 color: $second-color;
+                margin: 0 auto;
             }                
             h4 {
                 margin-top: 17px;
@@ -44,6 +45,7 @@
                 letter-spacing: 0.2px;
                 color: $third-color; 
                 margin-bottom: 60px;
+                margin: 0 auto;
             }
         }
         &__wrapper {
@@ -53,7 +55,8 @@
             padding: 0px;
             width: 1228px;
             height: 669px;
-            margin: 0px 0px 50px 0px;
+            margin: 0 auto;
+            margin-bottom: 50px;
             order: 0;
             &_left {
                 width: 453px;
@@ -68,8 +71,8 @@
                     flex-direction: column;
                     align-items: center;
                     width: 453px;
-                    height: 100%;
                     padding: 0px 50px 52px 50px;
+                    margin: 0 auto;
                     margin-right: 50px;
                     order: 0; 
                     input {
@@ -78,7 +81,8 @@
                         align-items: flex-start;
                         width: 353px;
                         height: 54px;                        
-                        margin: 0px 50px 45px 50px;
+                        margin: 0 auto;
+                        margin-bottom: 45px;
                         padding-left: 20px;
                         background: #F5F5F5;
                         border: 1px solid #E8E8E8;
@@ -112,7 +116,7 @@
                         order: 3;
                         align-self: stretch;
                         flex-grow: 0;
-                        margin-left: 50px;
+                        margin-left: 0;
                     }
                     .button.button_contacts{
                         width: 145px;
@@ -141,6 +145,7 @@
                     height: 108px;
                     margin: 0;
                     order:0;
+                    margin: 0 auto;
                     .adress {
                         display: flex;
                         flex-direction: column;

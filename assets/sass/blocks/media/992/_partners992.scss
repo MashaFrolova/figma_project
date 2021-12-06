@@ -8,8 +8,6 @@
         justify-content: space-between;
         align-items: center;
         padding: 0;
-        height: 932px; 
-        min-height: 100%;
         margin: 0 auto;
         margin-top: 300px;
         &__text {
@@ -17,8 +15,7 @@
             flex-direction: column;
             align-items: center;
             padding: 0px;
-            width: 552px;
-            height: 222px;
+            width: 100%;
             margin: 0 auto;
             margin-bottom: 80px;
             .header {
@@ -28,38 +25,37 @@
                 text-align: center;
                 letter-spacing: 0.2px;  
                 color: $second-color;
+                margin: 0 auto;
             }
             .subheader{
                 font-size: 29px;
                 line-height: 45px; 
                 padding: 0px;
+                margin: 0 auto;
             }
         }
         &__items {
-            width: 90%;
             margin: 0 auto;
             &__row {
-                left: 0;
-                right: 0;
+                margin: 0 auto;
                 width: 100%;
                 &_item {
+                    margin: 0 auto;
                     padding: 0;
                     img {
-                        margin-right: 0;
-                        margin-left: 0;
+                        margin: 0 auto;
                     }
                 }
             }
             &__row {
                 &_2{
-                    left: 0;
-                    right: 0;
+                    margin: 0 auto;
                     width: 100%;
                     &_item {
+                        margin: 0 auto;
                         padding: 0;
                         img {
-                            margin-right: 0;
-                            margin-left: 0;
+                            margin: 0 auto;
                         }
                     }
                 }

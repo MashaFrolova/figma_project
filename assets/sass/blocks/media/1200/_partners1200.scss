@@ -7,20 +7,21 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        padding: 0;
-        height: 932px; 
-        min-height: 100%;
         margin: 0 auto;
         margin-top: 300px;
+        order: 2;
+        margin-top: 0px;
+        padding-top: 150px;
         &__text {
             display: flex;
             flex-direction: column;
             align-items: center;
             padding: 0px;
-            width: 552px;
-            height: 222px;
+            width: 100%;
+            padding-top: 150px;
             margin: 0 auto;
             margin-bottom: 80px;
+            margin-top: 100px;
             .header {
                 font-weight: 400;
                 font-size: 48px;
@@ -28,11 +29,13 @@
                 text-align: center;
                 letter-spacing: 0.2px;  
                 color: $second-color;
+                margin: 0 auto;
             }
             .subheader{
                 font-size: 29px;
                 line-height: 45px; 
                 padding: 0px;
+                margin: 0 auto;
             }
         }
         &__items {
@@ -41,9 +44,10 @@
             flex-direction: column;
             align-content: center;
             align-items: center;
-            width: 275px;
-            height: 558.14px;
-            margin: 0 auto;            
+            width: 100%;
+            margin: 0 auto; 
+            margin-bottom: 0;      
+            margin-right: 0px;     
             &__row {
                 position: absolute;
                 display: flex;
@@ -54,6 +58,8 @@
                 width: 100%;
                 height: 100%;
                 top: 0px;
+                left: 0;
+                right: 0;
                 margin: 0 auto;
                 :nth-child(2){
                     order:3;
@@ -73,9 +79,11 @@
                     height: 151px;
                     left: 1px;
                     top: 18px;
+                    margin: 0 auto;
                     margin-bottom: 30px;
                     h6{
                         margin-bottom: 15px;
+                        order: 1;
                     }
                     img {
                         display: inline-block;
@@ -83,6 +91,7 @@
                         text-align: center;
                         margin: 0 auto;
                         bottom: 25px;
+                        order: 0;
                     }
                 }
             }
